@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>Azure 账号</title>
+    <url>/archives/2023/03/Azure%E8%B4%A6%E5%8F%B7/</url>
+    <content><![CDATA[<h1 id="azure账号收购">Azure 账号收购</h1>
+<aside>
+<p>💡 联系：</p>
+<p>E-mail: <a href="mailto:me@iccn.top">me@iccn.top</a> (推荐)</p>
+</aside>
+<blockquote>
+<p>微软的云服务 (Azure) 已经存在很长时间了，后来推出了学生订阅。用合法的教育邮箱注册，就能领 $100 的体验金和 1 年免费 b1s 主机 (1c1g) 带 64g 磁盘。然而，其他专业的学生并不需要，也不会使用这种服务，于此同时，信息相关专业学生需要云主机进行实践，如网站建设等操作。通过转让相关账号，可以促成资源的合理分配。</p>
+</blockquote>
+<hr>
+<h2 id="azure是什么">Azure 是什么？</h2>
+<p>Azure 是微软提供的云计算平台，提供广泛的服务和解决方案，以满足各种规模的组织和企业的需求。它提供可扩展和可靠的基础设施，安全的存储解决方案和智能的分析和报告工具，以帮助学校和大学构建强大的学生注册系统。</p>
+<h2 id="什么是azure学生订阅">什么是 Azure 学生订阅？</h2>
+<p>Azure 学生订阅是微软提供的云计算服务中的一项，允许合法的教育邮箱注册用户免费领取 $100 的体验金和 1 年免费 b1s 主机 (1c1g) 带 64g 磁盘。这对于需要云主机进行实践（如网站建设等操作）的信息相关专业学生来说是非常有吸引力的。</p>
+<h2 id="它有什么作用">它有什么作用？</h2>
+<p>确实，1c1g 的云主机做不了什么，性能对于动态网页和数据库来说并不充裕。然而，Microsoft 的网络对中国用户进行了优化，通过其在香港和新加坡的 PoP 能以较高的速度和较低的延时访问。使用这些机器作为反向代理，可以优化国内访客的体验，同时大幅节约运维费用。</p>
+<p>此外，这些主机还能作为正向代理，加速国外数据库、软件源和源码的拉取速度，进而改善部分软件的编译和使用体验。</p>
+<blockquote>
+<p>关于国外主机用来做什么，大家都心知肚明，不就是将流量转发到服务器，再从服务器转发到目标网站吗。</p>
+<p>所以，配置完也会把对应软件和配置打包发回。</p>
+</blockquote>
+<h2 id="关于个人信息安全">关于个人信息安全</h2>
+<p>注册时会提示相应资料可能传输至境外，微软作为跨国大型企业，有完善的用户数据保护机制。注册时需要教育邮箱和手机号仅供验证使用，以验证学生身份，同时防止欺诈。</p>
+<p>相关服务使用时均合法合规，仅作转发流量用途，不会记录访问日志，用户访问时均采用 https 加密，防止第三方窃听。</p>
+<hr>
+<h1 id="详细注册流程"><strong>详细注册流程</strong></h1>
+<h3 id="退出代理软件和vpn">1. 退出代理软件和 VPN。</h3>
+<p>访问<a href="http://ip111.cn/">此页面</a>检查 IP 是否为国内 IP。如下图所示，如果正确操作，页面上 IP 属地都应该在国内。</p>
+<img src="/archives/2023/03/Azure%E8%B4%A6%E5%8F%B7/Untitled.png" class="" title="Untitled">
+<h3 id="访问azure-for-students网站httpsazure.microsoft.comzh-cnfreestudents">2. 访问 Azure
+for Students 网站（<a href="https://azure.microsoft.com/zh-cn/free/students/%EF%BC%89">https://azure.microsoft.com/zh-cn/free/students/）</a></h3>
+<aside>
+<p>💡 注意点：
+1. 如果你以前登录过 Azure 需新建一个浏览器实例。具体操作：点击右上角的用户头像，弹出菜单中点加号。</p>
+<p>2. 该页面位于国外，加载比较缓慢，注册过程中可以最小化浏览器或做些别的事情。</p>
+<p>3. 最好避开晚高峰时段（大概 19 点到次日 1 点），最好选早上或中午注册，页面打开速度较快。</p>
+</aside>
+<h3 id="点击开始使用填入相关信息">3. 点击开始使用，填入相关信息</h3>
+<img src="/archives/2023/03/Azure%E8%B4%A6%E5%8F%B7/1.png" class="" title="Untitled">
+<p>在弹出的登录页面中，点创建账号，用学校的邮箱（以 edu.cn 结尾）注册，密码随机生成一个（妥善保管）, 之后登录校园邮箱，会有这样的邮件。</p>
+<p>​</p>
+<img src="/archives/2023/03/Azure%E8%B4%A6%E5%8F%B7/2.png" class="" title="Untitled">
+<p>输入安全代码，之后完成验证码。</p>
+<h3 id="验证手机号">4. 验证手机号</h3>
+<img src="/archives/2023/03/Azure%E8%B4%A6%E5%8F%B7/3.png" class="" title="Untitled">
+<p>在如下界面选择中国，输入你的手机号（仅供验证使用），发送验证码。</p>
+<h3 id="填写相关信息">5. 填写相关信息</h3>
+<p>在随后的界面中填写姓名（名单里随便找一个就行），邮箱（不要填错），大学名称，点击验证学术地位。</p>
+<h3 id="打开邮箱">6. 打开邮箱</h3>
+<p>应该会有这样一封邮件，点击上面的链接。</p>
+<img src="/archives/2023/03/Azure%E8%B4%A6%E5%8F%B7/4.png" class="">
+<h3 id="填写对应信息">7. 填写对应信息</h3>
+<p>名字名单里随便找一个，但最好和上面填的一样。</p>
+<aside>
+<p>💡 注意：</p>
+<p>姓和名时分开的。如果出现英文界面的话，First Name 填名，Last
+Name 填姓。</p>
+</aside>
+<img src="/archives/2023/03/Azure%E8%B4%A6%E5%8F%B7/5.png" class="" title="Untitled">
+<p>同样，填入名字，邮箱，电话，地址填学校地址或学校周边的建筑物的地址，邮编网上查一下所在的的邮政编码，勾选第一个，注册。</p>
+<img src="/archives/2023/03/Azure%E8%B4%A6%E5%8F%B7/6.png" class="" title="Untitled">
+<blockquote>
+<p>跳出这个界面的话按上面说的来，选择使用此地址。</p>
+</blockquote>
+<img src="/archives/2023/03/Azure%E8%B4%A6%E5%8F%B7/7.png" class="" title="Untitled">
+<h3 id="如果跳转到这个界面就说明失败了不用再管了">8. 如果跳转到这个界面就说明失败了，不用再管了</h3>
+<aside>
+<p>💡 Azure 的注册规则很迷，可能成功也可能不成功，主要看注册 IP 和手机号。
+<del>据我所知，一些号段可以，一些号段就不可以。</del></p>
+<blockquote>
+<p>2023 年 9 月：</p>
+<p>似乎现在政策变了，用教育邮箱认证后直接能用，但开出的 IP 路由没以前好，还是推荐用 Japan
+East，最好用 IPv6 连接。</p>
+</blockquote>
+</aside>
+<img src="/archives/2023/03/Azure%E8%B4%A6%E5%8F%B7/8.png" class="" title="Untitled">
+<p>能跳转至类似下图所示界面就说明成功了。</p>
+<img src="/archives/2023/03/Azure%E8%B4%A6%E5%8F%B7/9.png" class="" title="Untitled">
+<p><strong>如果你这一步没出现上图界面，而跳转到控制台，那么恭喜你注册成功了。如果不知道怎么用的话，可以把账号密码通过联系方式发给我（可以要红包）。</strong></p>
+<hr>
+<p>感谢你们花如此长的时间看完这篇文章，如果有缘，以后再见……</p>
+<hr>
+<p>The end.</p>
+<hr>
+]]></content>
+      <tags>
+        <tag>manual</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/archives/2023/08/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very
+first post. Check <a href="https://hexo.io/docs/">documentation</a> for
+more info. If you get any problems when using Hexo, you can find the
+answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or
+you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="quick-start">Quick Start</h2>
+<h3 id="create-a-new-post">Create a new post</h3>
+<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></tbody></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="run-server">Run server</h3>
+<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></tbody></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="generate-static-files">Generate static files</h3>
+<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></tbody></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="deploy-to-remote-sites">Deploy to remote sites</h3>
+<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></tbody></table></figure>
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+      <tags>
+        <tag>test</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>test</title>
+    <url>/archives/2023/08/test/</url>
+    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="ff3c4065088bb125cd0074b11419b8f21d7ef7953c8a4121b7108ca227f2a541">22064b17c03cb0c0e58c99349b6889d0b31470871e725085fde7c8feed9af7ef7cae8407dd4551b56f8f92baccb154316ce69f73ba73ceac87451b6b3081d99e036a2fb5834315458548fadddffb3f1a69334eed836d9a8eeb41713171a846497a8dd6725589f1f213001e9b1c417c46c1abc1786fd4cfac3f3efa480aff0d0be27b5a93065b6cddf546e62f74a792110f7fd9a4c50dfa189465c93ce72c90221c8e549efbb166b702a03091f5d0be128255183ef1856b98c8f404882ee548ff5b59a6753bda2e1e14168718494a95384900974cecdc252e4c46ae1b9eae08948f2bf87c25753c2532c93b81d58e04e9f2aa8a3778d9619d32d0619e4d6671faad516dabf2b70db60e56ea718ddde8209b71f81a27a0b8e43101135e2ae819330e2c62fa8a92f1e47f9990b6beaf7f83981e70ec20deadede95dffc7a8c5e13d745729588d4e4fbba2d93cedbfd229a37131b545644f7a728445fc9f15f46b2a67b226474bb95401680a6d905bcd8a61a35ea77fa189a6677e6854d29ba110ccc004f1a2bbc7a844ff65c1509a9899ffc274dd2c6d6377d4bcb5ebbdbea635e496d1514bc76036f3718358b11f7cf589ca0dc69920e3eb78dc08b2f96834f2d4b3a8597a5e90dd1f0f02f8a83d0a1de4373ea5d7e84ec0d67aa13a5f1698365212cdc90027e7b3ae766ca055e9a019cdc1ccf4b359df9e574c1fd7afa4711abad511d6b9092e3fa10641d7ecbfa7bef61bcd4d4fca698c46834a89a77572109a12d0ad907951ea9fc388a4d0c0445c539c1b97d64b21ab306e452dbe028afeacf3dbab010b55e2226cd7974689f1fafb32851b12ca1d0bb9c7b9eca0e099adc711bffa0e456bd081783e779deb01c004d3f280ba4441238d612d88c706f4723faa21a7038bfe747b886355fb429f9578a023eba5cb582e8f2d1df778ef9997fff766287db7e8c7b7b1722c93d06f8ae31d51160251fe98010a52d1812e47fa3a24cf8497904cd678cf25fa77c28c8ff28240efb5473257a7aea9e91de2824b1065c24e3fca987a7079c8034867757c621c59b5ae46eed2fb174fb69b0a5c38c034ff1b936f7f800b24b9b50401166309709ab8d535c275fe9542b23bbd65028dd2a733bc52fa135746a2d2162475fa424f922e5f1b9cd8951724db18295d4d49b69fa9ee87a7d4c1445a1998146c5349418bd02734009b8c842a823b858a169d4dc016323160b3bc7e0b3d37e353ec0aeeb7fb63232c96a2e030bee1c6d0b5657abfc241e4b47a4cd138c5b01af9afd6bd3c4bc3686837a1f72e04c3253008d1e7b8574a58b17594058c6c6f958aa08fab4a9105a138f9f2b545b2f0494d1711aa359211ee06198b3a2b2dbc7f009483d9f7a04e48beb7feda6522a50f975dd6e4bb4e7fc3ccfdcb3c50efe0b194d8bb24c1b0ed348b95982df5da2a214e8d7f2967ccbb428849b9f2b68b132005c4b49a4d603781658aed48174f347a6a4f468c246f15e95b31e9dd8fba840e282f6fbce575c0cc1561d1000bf9d1463d1466facb1cd6a84c087bc049732c8d3891a6055b5bae8f074dabd8cc73545af7e76459ff080cca99a93df9d97f7783eb16a1469c88cfee2f92a105f119c13a70426c2dbfbdb623216c4732f26b335c58813a759082eb15aa2e74d222c04ed619efc2bb828dc0a09b407791d8339491f69b2ee4a1bbb1d0a368c00c3ef9118bd1736273e22016b6386c23a22c1c3234bf9f0d6fa7c5f3fd5d7a14b639d4d4dd2633c21d0722544a3eec43a0ea54a5db26730327209dcb1ea48715bb8cd218d2050590aa31b00a0410f475f696819c8ac5a6229bbc15bf6a8145fcbe59498c02089c4f9bf6882f32aeea8ce29e351322870ca1a6f670f6743140decc3ab76bca20758c2ffda9f15a9b5ef2a720db76985272d3f0c375c27b36b81cacadbc470b1836f641f0ba3fdb306f8f8ba1271527dc1061f2ab32658b3f4eb000fd4bba88e260b5a21d86182733d2d519b127748e85c6f45254fbcc728845b1a0c849619524eb124954e14978e544032ab90660e42de6c8d9e2035e910c34578f741619e2aef416549ca0e13139f877198e98326ba1fdb3a6612a10b2521a50a7abc8d4f2088259bf12556f986d62c877efeaae1786f24106bc0c22833412b610a6a70f36c30467bff60cde78cb5548899f962fc58b3292b2663ded803f3e5b06ca3f4a32431717ce70aa697ca4d384dbb5d3f5826d3c3139e6795a048c377dccb022885c36f093a68444b853e59a1296c1cfc5a4a075751e4a0a87b3dcec0b7135f7c70268f90cea333fd28477c2f1d454006aefd0fbbd42e6f7bf04d766886c5b8e5bcf90e1d15e3e2874d54951d964858acb9f37b6fa9c03cc4ca7b1d4f95cfae05aa795ce12f171396d5098e74db14791f7b5361dc9666de807cd1c56f769fcf6f1e989bd1b464c3827dfd49a3fb63263919a4c739d2162c33ff9e15a71a4168da33c00fd8978aa2182dc5d14058855d9325b4313dccfdb0402cd7f485476234e6871b83f80fcf9988496e3a1d8c35df16c4b715eb27c92cf5b0aaf0a4f3116101777469805877c8f17342bcc79583156c61e86be5f177ec40d51079ca3377c65866272d6b80937e1fc3c74b3417c38a4d95b1439d7aa9ef9ed4ea9a172bc0b9733ea6ee314814dc7928aa79eb3ed0c42d7ff3bcd03430a0d9e684cc210a23c7336efd32a8a9578d98e3269340e99c778c86db2b9f4f6172641ed8b2bc46e04367de5718483ed33076261a0d10ae627c1cd3725c4634685064c795c9dcf0d32a37d2ebcd7faf88963dd818ae7f941b07ab1c192a4a93eff6c8b8c30612040a4ba9ab8c777268de0acb6b804487d9b0e5e3b1605ab78dc1faaffbf03da1979da35e3b3b74eaee139b9451b5bf1c7071d0f0f0efa4e15c8a73c678de1da639143120fd6f78fdd98c05321a88029afce44729120f4539410a9bb3fd479beba3bcc884f56acc884a1021dde849e7802990c325b22680df289417f28350956794da6783270edcd19a449839b39eb54bb27ddd01733ebd4883f09709820d120f42ee0d7a883f166cfa4f8e9028ff0e3fe69133a6c32504a833f9d69313db7d945b03a1843fd99f98f</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-default">
+      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-default">Hey, password is required here.</span>
+      </label>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+      <tags>
+        <tag>Testing</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>往事</title>
+    <url>/archives/2023/08/the-past/</url>
+    <content><![CDATA[<p><strong>曾经的故事</strong></p>
+<p>在 2019-2022 这三年间，我可能做了许多，然而又可以说是浪费了不少时间。</p>
+<h3 id="缘起"><strong>缘起</strong></h3>
+<p>学校里的电脑本来是不能上网的，而且一直应当如此。</p>
+<h3 id="最简单的方法"><strong>最简单的方法</strong></h3>
+<p>在 2019 年，我看到登录界面的过程，自然而然地想到了通过某些手段获得别人的密码用以登录。后来由于设备数限制不得不放弃。</p>
+<h3 id="简单的网络穿透"><strong>简单的网络穿透</strong></h3>
+<p>很早以前，某人就发现网络就算不登陆，也能进行 ping 和 nslookup 等操作，并且能得到正确的响应。推测是网管为了配置方便放行了一些端口，如 DHCP,
+DNS 等。</p>
+<p>后来，我了解能用 ICMP 和 DNS 上网的功能，是来自于 Softether 里的一种功能。</p>
+<figure>
+<img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/bbfd6c8d-6a11-44dd-8f08-0de1ff7d912d/Untitled.png" alt="Untitled">
+<figcaption aria-hidden="true">Untitled</figcaption>
+</figure>
+<p>但当我配好拿到学校去试，就发现报错，怀疑功能不完善，之后的一年便相安无事。</p>
+<p>后来王某发现了 <a href="https://github.com/wangyu-/udp2raw">udp2raw</a>，当时用了腾讯云 30M 的香港 vps 来测试，发现速度飞快，Google 几乎是秒开。可惜后来线路不走 CN2 了，价格也贵了不少，还一直断货。</p>
+<blockquote>
+<p>📋
+当时 udp2raw 配合影梭和 kcptun，几乎是完美的上网方法，而且居然能在 2 年的时间内一直稳定使用。</p>
+</blockquote>
+<h3 id="电子班牌和代理服务">电子班牌和代理服务</h3>
+<p>在大概 21 年寒假，刚从疫情回来，我们莫名其妙发现了电子班牌，这种 Android 设备简直是开发板自带系统加一个蹩脚 app 的组合，而且用一个 <code>rc.local</code> 脚本启动对应 app。而那个叫做 “晓慧云” 的 app 基本上是中间件的堆砌，维持在能用和不能用直接，甚至一些简单的操作如重复刷新等都会造成崩溃。</p>
+<p>感兴趣的话，可以在<a href="https://disk.tomzhu.me/s/6diE">这个链接</a>中找到原来的 apk。</p>
+<p>原先的修改方式非常原始，直接将隐藏导航栏、切前台、自动重启相关函数改为空（即在最前添加 <code>return void</code>），这样让大多数烦人的功能都去除，让班牌变成了平板电脑（当然，一开始也没有人发现这种动了手脚的 apk），还用了 oss 来分发。</p>
+<p>班牌还有的用处是安装代理，让电脑能够上网。（没错，两个网段直接就是啥隔离也没有，那些 win7 补丁只打到 17 年，后面还有人用 msf 和 psexec 搞事）</p>
+<h4 id="最简单的web服务">最简单的 web 服务</h4>
+<p>一开始，在王某做了修改版的 apk 之后，就又有人买了服务器，分发 APK 和使用教程。结果不久之后，被强制修改 dns。</p>
+<p>（也可能是学校第一次使用这个 Fortigate 设备，还把<code>.xyz,.top,.me,.cf,.ga,.gq,.tk,.ml</code> 这些后缀全搞掉了，看上去这种班牌变平板的事情比电脑突然发出声音严重多了）</p>
+<p>后来的事情便比较平常了……</p>
+]]></content>
+      <tags>
+        <tag>Past</tag>
+      </tags>
+  </entry>
+</search>
