@@ -92,6 +92,36 @@ East，最好用 IPv6 连接。</p>
       </tags>
   </entry>
   <entry>
+    <title>proxmox 上 amdgpu 的安装</title>
+    <url>/archives/2023/09/amdgpu-on-proxmox/</url>
+    <content><![CDATA[<h2 id="在proxmox-ve上使用amdgpu">在 Proxmox VE 上使用 amdgpu</h2>
+<p>仅供参考</p>
+<p><strong>文中所述的环境为 Proxmox VE 8.0，kernel 6.2</strong></p>
+<p>网上关于 Proxmox
+VE 直通 GPU 到 LXC 的教程遍地都是，在视频解码等应用下确实可行，然而，当尝试运行 OpenCL 相关操作时就会遇到问题。</p>
+<p>大多数教程都是这么说的：</p>
+<h3 id="关于n卡">关于 N 卡</h3>
+<p>按照正常方法安装 Nvidia 的 dkms 驱动，然后直通一些文件到 lxc 中，修改 <code>/etc/pve/lxc/&lt;id&gt;.conf</code>
+之后添加</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">lxc.cgroup.devices.allow: c 195:* rwm</span><br><span class="line">lxc.cgroup.devices.allow: c 234:* rwm</span><br><span class="line">lxc.cgroup.devices.allow: c 226:* rwm</span><br><span class="line">lxc.mount.entry: /dev/nvidia0 dev/nvidia0 none bind,optional,create=file</span><br><span class="line">lxc.mount.entry: /dev/nvidia1 dev/nvidia1 none bind,optional,create=file</span><br><span class="line">lxc.mount.entry: /dev/nvidiactl dev/nvidiactl none bind,optional,create=file</span><br><span class="line">lxc.mount.entry: /dev/nvidia-uvm dev/nvidia-uvm none bind,optional,create=file</span><br><span class="line">lxc.mount.entry: /dev/nvidia-modeset dev/nvidia-modeset none bind,optional,create=file</span><br><span class="line">lxc.mount.entry: /dev/nvidia-uvm-tools dev/nvidia-uvm-tools none bind,optional,create=file</span><br><span class="line">lxc.mount.entry: /dev/dri dev/dri none bind,optional,create=dir</span><br></pre></td></tr></tbody></table></figure>
+<p>一般来说，对应的 id 和目录可以通过 <code>ls -la /dev</code> 和 <code>ls -la /dev/dri</code> 获得。</p>
+<p>对应 intel 的核显，应该改为</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">lxc.cgroup.devices.allow: c 226:128 rwm</span><br><span class="line">lxc.cgroup.devices.allow: c 226:0 rwm</span><br><span class="line">lxc.mount.entry: /dev/dri dev/dri none bind,optional,create=dir</span><br></pre></td></tr></tbody></table></figure>
+<h3 id="host驱动的安装">Host 驱动的安装</h3>
+<p>从 https://repo.radeon.com 下安装 amdgpu-install 软件包，注意要选择最新的（以）</p>
+<h3 id="网上教程的坑">网上教程的坑</h3>
+<p>但对于 AMD 的核显 / 独显，教程几乎都忘了加 <code>/dev/kfd</code>，这样让 OpenCL 不能工作。</p>
+<p>一开始，我按照大多数教程所说，passthrough 了 <code>/dev/dri</code> 目录发现无法正常工作，后来从 docker 部署 pytorch 的文档中了解到还有 <code>/dev/kfd</code></p>
+<p>正确的做法:</p>
+<p>在文件后添加:</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">lxc.cgroup2.devices.allow: c 226:0 rwm</span><br><span class="line">lxc.cgroup2.devices.allow: c 226:128 rwm</span><br><span class="line">lxc.mount.entry: /dev/dri dev/dri none bind,optional,create=dir</span><br><span class="line">lxc.cgroup2.devices.allow: c 234:0 rwm</span><br><span class="line">lxc.apparmor.profile: unconfined</span><br><span class="line">lxc.mount.entry: /dev/kfd dev/kfd none bind,optional,create=file</span><br></pre></td></tr></tbody></table></figure>
+<p>重启 lxc 后，按正常方法安装 amdgpu 驱动，注意添加 <code>--no-dkms</code> 选项，就可以了。</p>
+]]></content>
+      <tags>
+        <tag>Homelab</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hello World</title>
     <url>/archives/2023/08/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very
@@ -230,36 +260,6 @@ key 应该到现在还能用。</p>
 ]]></content>
       <tags>
         <tag>Past</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>proxmox 上 amdgpu 的安装</title>
-    <url>/archives/2023/09/amdgpu-on-proxmox/</url>
-    <content><![CDATA[<h2 id="在proxmox-ve上使用amdgpu">在 Proxmox VE 上使用 amdgpu</h2>
-<p>仅供参考</p>
-<p><strong>文中所述的环境为 Proxmox VE 8.0，kernel 6.2</strong></p>
-<p>网上关于 Proxmox
-VE 直通 GPU 到 LXC 的教程遍地都是，在视频解码等应用下确实可行，然而，当尝试运行 OpenCL 相关操作时就会遇到问题。</p>
-<p>大多数教程都是这么说的：</p>
-<h3 id="关于n卡">关于 N 卡</h3>
-<p>按照正常方法安装 Nvidia 的 dkms 驱动，然后直通一些文件到 lxc 中，修改 <code>/etc/pve/lxc/&lt;id&gt;.conf</code>
-之后添加</p>
-<figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">lxc.cgroup.devices.allow: c 195:* rwm</span><br><span class="line">lxc.cgroup.devices.allow: c 234:* rwm</span><br><span class="line">lxc.cgroup.devices.allow: c 226:* rwm</span><br><span class="line">lxc.mount.entry: /dev/nvidia0 dev/nvidia0 none bind,optional,create=file</span><br><span class="line">lxc.mount.entry: /dev/nvidia1 dev/nvidia1 none bind,optional,create=file</span><br><span class="line">lxc.mount.entry: /dev/nvidiactl dev/nvidiactl none bind,optional,create=file</span><br><span class="line">lxc.mount.entry: /dev/nvidia-uvm dev/nvidia-uvm none bind,optional,create=file</span><br><span class="line">lxc.mount.entry: /dev/nvidia-modeset dev/nvidia-modeset none bind,optional,create=file</span><br><span class="line">lxc.mount.entry: /dev/nvidia-uvm-tools dev/nvidia-uvm-tools none bind,optional,create=file</span><br><span class="line">lxc.mount.entry: /dev/dri dev/dri none bind,optional,create=dir</span><br></pre></td></tr></tbody></table></figure>
-<p>一般来说，对应的 id 和目录可以通过 <code>ls -la /dev</code> 和 <code>ls -la /dev/dri</code> 获得。</p>
-<p>对应 intel 的核显，应该改为</p>
-<figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">lxc.cgroup.devices.allow: c 226:128 rwm</span><br><span class="line">lxc.cgroup.devices.allow: c 226:0 rwm</span><br><span class="line">lxc.mount.entry: /dev/dri dev/dri none bind,optional,create=dir</span><br></pre></td></tr></tbody></table></figure>
-<h3 id="host驱动的安装">Host 驱动的安装</h3>
-<p>从 https://repo.radeon.com 下安装 amdgpu-install 软件包，注意要选择最新的（以）</p>
-<h3 id="网上教程的坑">网上教程的坑</h3>
-<p>但对于 AMD 的核显 / 独显，教程几乎都忘了加 <code>/dev/kfd</code>，这样让 OpenCL 不能工作。</p>
-<p>一开始，我按照大多数教程所说，passthrough 了 <code>/dev/dri</code> 目录发现无法正常工作，后来从 docker 部署 pytorch 的文档中了解到还有 <code>/dev/kfd</code></p>
-<p>正确的做法:</p>
-<p>在文件后添加:</p>
-<figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">lxc.cgroup2.devices.allow: c 226:0 rwm</span><br><span class="line">lxc.cgroup2.devices.allow: c 226:128 rwm</span><br><span class="line">lxc.mount.entry: /dev/dri dev/dri none bind,optional,create=dir</span><br><span class="line">lxc.cgroup2.devices.allow: c 234:0 rwm</span><br><span class="line">lxc.apparmor.profile: unconfined</span><br><span class="line">lxc.mount.entry: /dev/kfd dev/kfd none bind,optional,create=file</span><br></pre></td></tr></tbody></table></figure>
-<p>重启 lxc 后，按正常方法安装 amdgpu 驱动，注意添加 <code>--no-dkms</code> 选项，就可以了。</p>
-]]></content>
-      <tags>
-        <tag>Homelab</tag>
       </tags>
   </entry>
 </search>
