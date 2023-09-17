@@ -92,6 +92,26 @@ East，最好用 IPv6 连接。</p>
       </tags>
   </entry>
   <entry>
+    <title>站点说明</title>
+    <url>/archives/2023/09/description/</url>
+    <content><![CDATA[<h3 id="站点建于2023年9月">站点建于 2023 年 9 月</h3>
+<ol type="1">
+<li><p>主要用于测试 Hexo 和 Next 的静态站点生成器，同时发布一些记录。</p></li>
+<li><p>基于使用 <code>hexo-renderer-pandoc</code> 配合 mathjax,pdf.js,disqusjs 等项目完成，感谢各个大佬的贡献。</p></li>
+<li><p>使用国内 cdn（<code>staticfile.org</code> 和 <code>fonts.googleapis.com</code>）优化访问速度。</p></li>
+<li><p>在 Github Pages 和 Cloudflare Pages 上部署。</p></li>
+<li><p>客户端使用 Typora 开心版，<code>winmm.dll</code> 补丁来自<a href="https://www.fahai.org/jszt/14.html">法海之路
+(fahai.org)</a>。</p></li>
+<li><p>图片计划使用 Gcore CDN 配合 Cloudflare 分发。</p></li>
+<li><p>网盘使用 Cloudreve。</p></li>
+</ol>
+<p>总之，这个站点尽可能减少运维时间和成本，同时提高可用性和体验。</p>
+]]></content>
+      <tags>
+        <tag>site</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>proxmox 上 amdgpu 的安装</title>
     <url>/archives/2023/09/amdgpu-on-proxmox/</url>
     <content><![CDATA[<h2 id="在proxmox-ve上使用amdgpu">在 Proxmox VE 上使用 amdgpu</h2>
@@ -99,6 +119,7 @@ East，最好用 IPv6 连接。</p>
 <p><strong>文中所述的环境为 Proxmox VE 8.0，kernel 6.2</strong></p>
 <p>网上关于 Proxmox
 VE 直通 GPU 到 LXC 的教程遍地都是，在视频解码等应用下确实可行，然而，当尝试运行 OpenCL 相关操作时就会遇到问题。</p>
+<span id="more"></span>
 <p>大多数教程都是这么说的：</p>
 <h3 id="关于n卡">关于 N 卡</h3>
 <p>按照正常方法安装 Nvidia 的 dkms 驱动，然后直通一些文件到 lxc 中，修改 <code>/etc/pve/lxc/&lt;id&gt;.conf</code>
@@ -119,6 +140,25 @@ VE 直通 GPU 到 LXC 的教程遍地都是，在视频解码等应用下确实�
 ]]></content>
       <tags>
         <tag>Homelab</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>test</title>
+    <url>/archives/2023/08/test/</url>
+    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="525246f6afd0fb9a1030d797020f86b2efb505b92dd1ec5de27f55880ee29206">bd25ed9264b080267271e137e33d0ce179f69fb74e1ffc6d9dec774e70d98667fad4bf377dc3c553b30fdcaf223d38d39f9ddebc612b07826bb289a5a6984fdd2e11500ce0c8283a68d10cfa0b550fa9ce59ae522ed23b6bd2cabeef18edb3df62a92f259cf85700e6d2c84bb3baa835844fe1602b9815055558859d1adadd4b8beb7300dc0fa26b2f8a06215325bf396e738b83d52697baa88a8fca35769e91b071f68b6089f2f6167fba95e2f54ea312c2a9cf969cb1e7fc15354ca630d265eb9efd8830676fd1b5cd893b32d30aac6ed700b70b9a1ce349a0312713fb3d53661151778ca0946cf278fa61773c49e5d70ba79fe7d21953fa747cb97f8c72abea87498c60c5b0a37f8ee5829a7d2f5687fc83b7c6a7cf54975444928375cb2c3fbd5561b62e4ebef0d8f3aedaa9c8ef123eca34c96f91e2651faff824b8cff4ffafd62f56ac5934a6de1f3fcf97fe7f43962b84b18ae36d395c490df89c62442e54f49ea1ca65a17f2940e351fbd5068d7cd2c47d0a3c3f0df61379f5587b3d5004e29306e62c73e8262440cb8d67dbefbf5144c488d1c8ed5bbd966e08f13b0bd01546800b75c7f8548e0bff46d4989d36ece27464f39fdaaad785dabf0859fd8e4ad9c3d450bd9321455d06e97e59ce40b9534bbc052ee0665fff910cd28409101eb3dd734c6412b38c17263fa7aad7d33b4cb46311a479f86511963c78e23fa6967d6f0b380c8474a6b11b0f758e7adec140f2c387db939d240977816f69986901633131d230d0d77248adc2fea2f70a9bbc04c72ea93e564f26c81d85acf7dede1cce11eed947411527c7d2447398f4c77ae007ed11a9e02c8ba5b7c78a10d1306718f46553be3311297d72d589ff8a17dc04d5b68378fd14ce78cfbbfc034ffdf694b0ccf8605fb5dba8aa3285b7ab4193a39d35a9e0411fd49a9ca8668b59acc777436cd39874900388211ee392638df02217f737dd4006e020172e68d4583c80c39b8f1e0afb4ae2eee0435344e66eada44ee3646f7d4de01f88c66177558fbffd0593fd4270626553f3ff4ca754d737425907dd23ed27f746c6a5f683f778eb635239b7c0d994d74558a3d0f51d1a096bde22436221992aa501f14856d7025b3ca8154d1d4af63d8b0e20733f83b0104582838fdf9be27d8af74229328eb5868aa52b2998bce7aec8dd6f505cf5ebfc3bf71e6e16ad32ee609d48f0873a2241f79cb7c1888b7246887ef3259664f1cc5456a16c1707c7b6ad81158632e7d7774bbd51d4a71e9e20dfe8e032204b1d141a692c080aaa575208b68741b69251b9a6f2faff23f571c2d97cbc3875cb84cd5aaf491678b54656c773dd5ddd0875ed4357777b1fed6b6c211443ce0bd101c0b4280444cce665ec31a3af476d50bb843d99ce0eb84bf97b1c5d16deb6bf4fda94b8695a243dae62104f7576462871c6b6d1ce072366b59916e836b43cba418f743e88c55df811ba696a08e9c83fb009891810be444bc7ad348eb966569fb420ba7650e2eb0d34f294fff425ba8a1c8209724b45fabb96cca8c4d4a615769643c44bd7bb288bf5c88917592e191adb734302c7d2b3b0e7b3be883c6a51ccf779182a7e7d7bee17f47792142ae8550ca7d1775275c515fd13f7fcfc8d2387a3bb48ea6bf4391dab255e1126bfe92825b896a14afd993c0a2661efee260e4e1c3c3d651fd5e447514bdfd171bc278a601837bc8e77f6bdd0e617a78a776978be5bff063cd2fcb2d5c2782b8a2fe080b2007a3617cb828f912f4ad61ff39a5372988e35408951322fd91f2cff0df2d038721fea58d533ea19e79cef2ae26c50adbc67f88042c25628ce0f1c7fe9601f09c12cffcbe16c0332648bb0976831a03746676dc7ba2092ded20c982be55fbbf42e74f2f5722d28e52fcc4bd36f4a948c9e0c3117891a64bafff7acbcaf26cdd4e63fbcca26371d8eb48acd8019b9166b6444d92a9410a6d99472568d61d07b12c94f7bcac9ca99fc6113658bc3f3b00d205dc0a2dbc6b0ba23e50d641546566a45fb104c1e9ab5ea770f7314f27e3d6192414edf5f683d2350af460e0dd869fcd0bb0c2fdf043f15bac0ebafeefb26374745d85aaaeb63de804551dd6e67e6cf75c204d4a9863a600aa704085da6331fb5bed9894654d89f8d0cca6bbbc363ff0c702df91d844558e380a527b2fe51863e9dbc5fb2b262f7ffb60d9a8664aa04bd5a7631ff6a9474aa42edb62e3fd9a53f70b8a756005f57f3f94c9fffcbe9e68c394398d66cb9ec7abb268e14386c494f907eed5d96367b01843bfddde5575190f57d71d9cd47460f6e3ba72a4a87775faf52ccdff4a52383efb2856f3a2455bf8d9e2320f0c262f535b4fb2c1c840cac6c38f2541538a2722ac75ba6575ea2eb3233db56eba6edee00160fe918c4654a515859519c84ba3c4513a713dde47fca11271172b41a3475a38af2362a4552fca3ae881d652ab09e2b46e02324d2dfda4e3a7c7be780fcaaf2940ae3042a49b80d36c1a8fa65cc500afee2f48f8e24c55af184d60b55746f8df1a1aeafcf0af45b56559a5350807312b9e2c53d5797edc31092c41f3d39742e8387057c2bee6c616183aa5adb4a23a77769b6e95fd5c47e45289a78a61bbb2a3c04d2e489d7773e6b1cd39cd128722fa512cdd1dcd7a8f9c59a264369c05b49f6e0880c9927d1309869dc6cc39ec44feeff8063f54a5e2d76bd67fbe79bb3ce3e6374043adda20282ecb81cddacceaa5dbb648d703114fd73322a8ddb28a6ad56ae3705420dc9794e671c745fa24cb394b65316283a3f3187342b14f2eb10bb965835b1985012a12537276ac1b10ca3a3ac48555d819283388fa5df771b6b81cd6b345390ad86e8e0367a421706815ea5b170cca02030925867d0d8fb43eada6015c37a0be0bee712e131b9db1a4ed5cc42d06b975ac244aa42c5da2f5b774b162d291a1d3888c19870b37b49c994ff959879618ed8ab506bf6662ec8d4bff6604ca9bf6cc7f4190cade74c367c9bd6c5d06c10bcc2aa107d365826eceae9ce280d403e69c0d52d14c4d1af80f9b61e7d46e2</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-default">
+      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-default">Hey, password is required here.</span>
+      </label>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+      <tags>
+        <tag>Testing</tag>
       </tags>
   </entry>
   <entry>
@@ -145,31 +185,6 @@ you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p
 ]]></content>
       <tags>
         <tag>test</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>test</title>
-    <url>/archives/2023/08/test/</url>
-    <content><![CDATA[<p>Hello world</p>
-<h3 id="math-render-test">Math render test</h3>
-<p><span class="math display">\[
-evidence_{i}=\sum_{j}W_{ij}x_{j}+b_{i}
-\]</span></p>
-<h3 id="code">Code</h3>
-<figure class="highlight python"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> this</span><br><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"><span class="keyword">def</span> <span class="title function_">main</span>():</span><br><span class="line">    requests.session()</span><br><span class="line"><span class="keyword">if</span> __name__==<span class="string">"__main__"</span>:</span><br><span class="line">    main()</span><br></pre></td></tr></tbody></table></figure>
-<figure class="highlight c"><table><tbody><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span>{</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
-<h3 id="pdf.js">PDF.js</h3>
-<div class="pdf-container" data-target="test.pdf" data-height="500px"></div>
-<h3 id="image-cdn-test">Image CDN test</h3>
-<p>Github:</p>
-<img src="/archives/2023/08/test/test.jpg" class="" title="010508ux2tc0evhzmevixj">
-<figure>
-<img src="https://site.iccn.top/test/test.jpg" alt="010508ux2tc0evhzmevixj">
-<figcaption aria-hidden="true">010508ux2tc0evhzmevixj</figcaption>
-</figure>
-]]></content>
-      <tags>
-        <tag>Testing</tag>
       </tags>
   </entry>
   <entry>
