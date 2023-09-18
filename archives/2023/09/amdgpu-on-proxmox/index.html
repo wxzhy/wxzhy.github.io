@@ -23,7 +23,7 @@
   <link rel="stylesheet" href="https://cdn.staticfile.org/pace/1.2.4/themes/blue/pace-theme-minimal.css">
   <script src="https://cdn.staticfile.org/pace/1.2.4/pace.min.js" integrity="sha256-gqd7YTjg/BtfqWSwsJOvndl0Bxc8gFImLEkXQT8+qj0=" crossorigin="anonymous"></script>
 
-<script class="next-config" data-name="main" type="application/json">{"hostname":"wxzhy.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.18.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":true,"style":"default"},"fold":{"enable":false,"height":500},"bookmark":{"enable":true,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":true,"comments":{"style":"tabs","active":"gitalk","storage":true,"lazyload":true,"nav":{"disqus":{"text":"Load Disqus","order":-1},"gitalk":{"order":-2}},"activeClass":"gitalk"},"stickytabs":false,"motion":{"enable":true,"async":true,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":true,"preload":true}}</script><script src="https://cdn.staticfile.org/hexo-theme-next/8.18.0/config.min.js"></script>
+<script class="next-config" data-name="main" type="application/json">{"hostname":"wxzhy.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.18.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":true,"style":"default"},"fold":{"enable":false,"height":500},"bookmark":{"enable":true,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":true,"comments":{"style":"tabs","active":"gitalk","storage":true,"lazyload":false,"nav":{"disqus":{"text":"Load Disqus","order":-1},"livere":{"text":"Load Livere","order":-2},"gitalk":{"order":-3}},"activeClass":"gitalk"},"stickytabs":false,"motion":{"enable":true,"async":true,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":true,"preload":true}}</script><script src="https://cdn.staticfile.org/hexo-theme-next/8.18.0/config.min.js"></script>
 
     <meta name="description" content="在 Proxmox VE 上使用 amdgpu 仅供参考 文中所述的环境为 Proxmox VE 8.0，kernel 6.2 网上关于 Proxmox VE 直通 GPU 到 LXC 的教程遍地都是，在视频解码等应用下确实可行，然而，当尝试运行 OpenCL 相关操作时就会遇到问题。">
 <meta property="og:type" content="article">
@@ -326,12 +326,15 @@ VE 直通 GPU 到 LXC 的教程遍地都是，在视频解码等应用下确实�
       <div class="tabs tabs-comment">
         <ul class="nav-tabs">
             <li class="tab"><a href="#comment-gitalk">gitalk</a></li>
+            <li class="tab"><a href="#comment-livere">Load Livere</a></li>
             <li class="tab"><a href="#comment-disqusjs">disqusjs</a></li>
-            <li class="tab"><a href="#comment-livere">livere</a></li>
         </ul>
         <div class="tab-content">
             <div class="tab-pane gitalk" id="comment-gitalk">
               <div class="comments gitalk-container"></div>
+            </div>
+            <div class="tab-pane livere" id="comment-livere">
+              <div class="comments" id="lv-container" data-id="city" data-uid="MTAyMC81ODk5OS8zNTQ2MQ"></div>
             </div>
             <div class="tab-pane disqusjs" id="comment-disqusjs">
               
@@ -339,9 +342,6 @@ VE 直通 GPU 到 LXC 的教程遍地都是，在视频解码等应用下确实�
     <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
   </div>
   
-            </div>
-            <div class="tab-pane livere" id="comment-livere">
-              <div class="comments" id="lv-container" data-id="city" data-uid="MTAyMC81ODk5OS8zNTQ2MQ"></div>
             </div>
         </div>
       </div>
@@ -428,15 +428,15 @@ VE 直通 GPU 到 LXC 的教程遍地都是，在视频解码等应用下确实�
   <script src="https://cdn.staticfile.org/quicklink/2.3.0/quicklink.umd.js" integrity="sha256-yvJQOINiH9fWemHn0vCA5lsHWJaHs6/ZmO+1Ft04SvM=" crossorigin="anonymous"></script>
   <script class="next-config" data-name="quicklink" type="application/json">{"enable":true,"home":false,"archive":false,"delay":true,"timeout":3000,"priority":true,"url":"https://wxzhy.github.io/archives/2023/09/amdgpu-on-proxmox/"}</script>
   <script src="https://cdn.staticfile.org/hexo-theme-next/8.18.0/third-party/quicklink.min.js"></script>
-<link rel="stylesheet" href="https://cdn.staticfile.org/disqusjs/3.0.2/styles/disqusjs.css" integrity="sha256-71XarXwNr1Td27HmZI9zjY+rMzRdush6/glo6VFXp7o=" crossorigin="anonymous">
-
-<script class="next-config" data-name="disqusjs" type="application/json">{"enable":true,"api":"https://proxy.cors.sh/https://disqus.com/api/","apikey":"CVMOWPMqbj5wZ95x4J5LuYNytuaYgWlLAnh3R216F80BJXRYDfAGzOFSBpfi8SCC","shortname":"tomzhu","js":{"url":"https://cdn.staticfile.org/disqusjs/3.0.2/disqusjs.es2015.umd.min.js","integrity":"sha256-okP99ZQKVpIy7+NogAMpGlIQzJa9XKXhIJcFgdju5bU="}}</script>
-<script src="https://cdn.staticfile.org/hexo-theme-next/8.18.0/third-party/comments/disqusjs.min.js"></script>
+<script src="https://cdn.staticfile.org/hexo-theme-next/8.18.0/third-party/comments/livere.min.js"></script>
 <link rel="stylesheet" href="https://cdn.staticfile.org/gitalk/1.8.0/gitalk.css" integrity="sha256-AJnUHL7dBv6PGaeyPQJcgQPDjt/Hn/PvYZde1iqfp8U=" crossorigin="anonymous">
 
 <script class="next-config" data-name="gitalk" type="application/json">{"enable":true,"github_id":"wxzhy","repo":"wxzhy.github.io","client_id":"49abff1cbbbc71184768","client_secret":"04583734a9cae4ef3a33fafe7daa313151adc365","admin_user":"wxzhy","distraction_free_mode":true,"proxy":"https://proxy.cors.sh/https://github.com/login/oauth/access_token","language":"zh-CN","js":{"url":"https://cdn.staticfile.org/gitalk/1.8.0/gitalk.min.js","integrity":"sha256-MVK9MGD/XJaGyIghSVrONSnoXoGh3IFxLw0zfvzpxR4="},"path_md5":"4b15f0b59556f5cb703b4e5783f53d89"}</script>
 <script src="https://cdn.staticfile.org/hexo-theme-next/8.18.0/third-party/comments/gitalk.min.js"></script>
-<script src="https://cdn.staticfile.org/hexo-theme-next/8.18.0/third-party/comments/livere.min.js"></script>
+<link rel="stylesheet" href="https://cdn.staticfile.org/disqusjs/3.0.2/styles/disqusjs.css" integrity="sha256-71XarXwNr1Td27HmZI9zjY+rMzRdush6/glo6VFXp7o=" crossorigin="anonymous">
+
+<script class="next-config" data-name="disqusjs" type="application/json">{"enable":true,"api":"https://proxy.cors.sh/https://disqus.com/api/","apikey":"CVMOWPMqbj5wZ95x4J5LuYNytuaYgWlLAnh3R216F80BJXRYDfAGzOFSBpfi8SCC","shortname":"tomzhu","js":{"url":"https://cdn.staticfile.org/disqusjs/3.0.2/disqusjs.es2015.umd.min.js","integrity":"sha256-okP99ZQKVpIy7+NogAMpGlIQzJa9XKXhIJcFgdju5bU="}}</script>
+<script src="https://cdn.staticfile.org/hexo-theme-next/8.18.0/third-party/comments/disqusjs.min.js"></script>
 
 </body>
 </html>

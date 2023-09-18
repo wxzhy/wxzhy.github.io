@@ -117,7 +117,7 @@
 
 
 :root {
-  --annotation-unfocused-field-background: url("data:image/svg+xml;charset=UTF-8,<svg width="1px" height="1px" xmlns="http://www.w3.org/2000/svg"><rect width="100%" height="100%" style="fill:rgba(0, 54, 255, 0.13);"></rect></svg>");
+  --annotation-unfocused-field-background: url("data:image/svg+xml;charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13);'/></svg>");
   --input-focus-border-color: Highlight;
   --input-focus-outline: 1px solid Canvas;
   --input-unfocused-border-color: transparent;
@@ -148,7 +148,7 @@
             backdrop-filter: var(--hcm-highligh-filter);
   }
 
-  .annotationLayer .linkAnnotation &gt; a:hover {
+  .annotationLayer .linkAnnotation > a:hover {
     opacity: 0 !important;
     background: none !important;
     box-shadow: none;
@@ -215,7 +215,7 @@
   outline: var(--link-outline);
 }
 
-.annotationLayer :is(.linkAnnotation, .buttonWidgetAnnotation.pushButton) &gt; a {
+.annotationLayer :is(.linkAnnotation, .buttonWidgetAnnotation.pushButton) > a {
   position: absolute;
   font-size: 1em;
   top: 0;
@@ -226,7 +226,7 @@
 
 .annotationLayer
   :is(.linkAnnotation, .buttonWidgetAnnotation.pushButton):not(.hasBorder)
-  &gt; a:hover {
+  > a:hover {
   opacity: 0.2;
   background-color: rgba(255, 255, 0, 1);
   box-shadow: 0 2px 10px rgba(255, 255, 0, 1);
@@ -420,15 +420,15 @@
   font-size: calc(9px * var(--scale-factor));
 }
 
-.annotationLayer .popup &gt; .header {
+.annotationLayer .popup > .header {
   display: inline-block;
 }
 
-.annotationLayer .popup &gt; .header h1 {
+.annotationLayer .popup > .header h1 {
   display: inline;
 }
 
-.annotationLayer .popup &gt; .header .popupDate {
+.annotationLayer .popup > .header .popupDate {
   display: inline-block;
   margin-left: calc(5px * var(--scale-factor));
   width: -moz-fit-content;
@@ -441,7 +441,7 @@
   padding-top: calc(2px * var(--scale-factor));
 }
 
-.annotationLayer .richText &gt; * {
+.annotationLayer .richText > * {
   white-space: pre-wrap;
   font-size: calc(9px * var(--scale-factor));
 }
@@ -487,7 +487,7 @@
 
 
 :root {
-  --xfa-unfocused-field-background: url("data:image/svg+xml;charset=UTF-8,<svg width="1px" height="1px" xmlns="http://www.w3.org/2000/svg"><rect width="100%" height="100%" style="fill:rgba(0, 54, 255, 0.13);"></rect></svg>");
+  --xfa-unfocused-field-background: url("data:image/svg+xml;charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13);'/></svg>");
   --xfa-focus-outline: auto;
 }
 
@@ -626,7 +626,7 @@
   align-items: center;
 }
 
-:is(.xfaLeft, .xfaRight) &gt; :is(.xfaCaption, .xfaCaptionForCheckButton) {
+:is(.xfaLeft, .xfaRight) > :is(.xfaCaption, .xfaCaptionForCheckButton) {
   max-height: 100%;
 }
 
@@ -642,7 +642,7 @@
   align-items: flex-start;
 }
 
-:is(.xfaTop, .xfaBottom) &gt; :is(.xfaCaption, .xfaCaptionForCheckButton) {
+:is(.xfaTop, .xfaBottom) > :is(.xfaCaption, .xfaCaptionForCheckButton) {
   width: 100%;
 }
 
@@ -682,7 +682,7 @@
   padding-inline: 2px;
 }
 
-:is(.xfaTop, .xfaBottom) &gt; :is(.xfaTextfield, .xfaSelect) {
+:is(.xfaTop, .xfaBottom) > :is(.xfaTextfield, .xfaSelect) {
   flex: 0 1 auto;
 }
 
@@ -745,7 +745,7 @@
   align-items: stretch;
 }
 
-.xfaTb &gt; div {
+.xfaTb > div {
   justify-content: left;
 }
 
@@ -781,7 +781,7 @@
   flex: 1;
 }
 
-.xfaTable .xfaRlRow &gt; div {
+.xfaTable .xfaRlRow > div {
   flex: 1;
 }
 
@@ -1000,16 +1000,16 @@
   height: 100%;
 }
 
-.annotationEditorLayer :is(.freeTextEditor, .inkEditor, .stampEditor) &gt; .resizers {
+.annotationEditorLayer :is(.freeTextEditor, .inkEditor, .stampEditor) > .resizers {
       position: absolute;
       inset: 0;
     }
 
-.annotationEditorLayer :is(.freeTextEditor, .inkEditor, .stampEditor) &gt; .resizers.hidden {
+.annotationEditorLayer :is(.freeTextEditor, .inkEditor, .stampEditor) > .resizers.hidden {
         display: none;
       }
 
-.annotationEditorLayer :is(.freeTextEditor, .inkEditor, .stampEditor) &gt; .resizers &gt; .resizer {
+.annotationEditorLayer :is(.freeTextEditor, .inkEditor, .stampEditor) > .resizers > .resizer {
         width: var(--resizer-size);
         height: var(--resizer-size);
         background: var(--resizer-bg-color);
@@ -1017,195 +1017,195 @@
         position: absolute;
       }
 
-.annotationEditorLayer :is(.freeTextEditor, .inkEditor, .stampEditor) &gt; .resizers &gt; .resizer.topLeft {
+.annotationEditorLayer :is(.freeTextEditor, .inkEditor, .stampEditor) > .resizers > .resizer.topLeft {
           top: var(--resizer-shift);
           left: var(--resizer-shift);
         }
 
-.annotationEditorLayer :is(.freeTextEditor, .inkEditor, .stampEditor) &gt; .resizers &gt; .resizer.topMiddle {
+.annotationEditorLayer :is(.freeTextEditor, .inkEditor, .stampEditor) > .resizers > .resizer.topMiddle {
           top: var(--resizer-shift);
           left: calc(50% + var(--resizer-shift));
         }
 
-.annotationEditorLayer :is(.freeTextEditor, .inkEditor, .stampEditor) &gt; .resizers &gt; .resizer.topRight {
+.annotationEditorLayer :is(.freeTextEditor, .inkEditor, .stampEditor) > .resizers > .resizer.topRight {
           top: var(--resizer-shift);
           right: var(--resizer-shift);
         }
 
-.annotationEditorLayer :is(.freeTextEditor, .inkEditor, .stampEditor) &gt; .resizers &gt; .resizer.middleRight {
+.annotationEditorLayer :is(.freeTextEditor, .inkEditor, .stampEditor) > .resizers > .resizer.middleRight {
           top: calc(50% + var(--resizer-shift));
           right: var(--resizer-shift);
         }
 
-.annotationEditorLayer :is(.freeTextEditor, .inkEditor, .stampEditor) &gt; .resizers &gt; .resizer.bottomRight {
+.annotationEditorLayer :is(.freeTextEditor, .inkEditor, .stampEditor) > .resizers > .resizer.bottomRight {
           bottom: var(--resizer-shift);
           right: var(--resizer-shift);
         }
 
-.annotationEditorLayer :is(.freeTextEditor, .inkEditor, .stampEditor) &gt; .resizers &gt; .resizer.bottomMiddle {
+.annotationEditorLayer :is(.freeTextEditor, .inkEditor, .stampEditor) > .resizers > .resizer.bottomMiddle {
           bottom: var(--resizer-shift);
           left: calc(50% + var(--resizer-shift));
         }
 
-.annotationEditorLayer :is(.freeTextEditor, .inkEditor, .stampEditor) &gt; .resizers &gt; .resizer.bottomLeft {
+.annotationEditorLayer :is(.freeTextEditor, .inkEditor, .stampEditor) > .resizers > .resizer.bottomLeft {
           bottom: var(--resizer-shift);
           left: var(--resizer-shift);
         }
 
-.annotationEditorLayer :is(.freeTextEditor, .inkEditor, .stampEditor) &gt; .resizers &gt; .resizer.middleLeft {
+.annotationEditorLayer :is(.freeTextEditor, .inkEditor, .stampEditor) > .resizers > .resizer.middleLeft {
           top: calc(50% + var(--resizer-shift));
           left: var(--resizer-shift);
         }
 
 .annotationEditorLayer[data-main-rotation="0"]
-    :is([data-editor-rotation="0"], [data-editor-rotation="180"]) &gt; .resizers &gt; .resizer.topLeft,
+    :is([data-editor-rotation="0"], [data-editor-rotation="180"]) > .resizers > .resizer.topLeft,
       .annotationEditorLayer[data-main-rotation="90"]
-    :is([data-editor-rotation="270"], [data-editor-rotation="90"]) &gt; .resizers &gt; .resizer.topLeft,
+    :is([data-editor-rotation="270"], [data-editor-rotation="90"]) > .resizers > .resizer.topLeft,
       .annotationEditorLayer[data-main-rotation="180"]
-    :is([data-editor-rotation="180"], [data-editor-rotation="0"]) &gt; .resizers &gt; .resizer.topLeft,
+    :is([data-editor-rotation="180"], [data-editor-rotation="0"]) > .resizers > .resizer.topLeft,
       .annotationEditorLayer[data-main-rotation="270"]
-    :is([data-editor-rotation="90"], [data-editor-rotation="270"]) &gt; .resizers &gt; .resizer.topLeft,
+    :is([data-editor-rotation="90"], [data-editor-rotation="270"]) > .resizers > .resizer.topLeft,
       .annotationEditorLayer[data-main-rotation="0"]
-    :is([data-editor-rotation="0"], [data-editor-rotation="180"]) &gt; .resizers &gt; .resizer.bottomRight,
+    :is([data-editor-rotation="0"], [data-editor-rotation="180"]) > .resizers > .resizer.bottomRight,
       .annotationEditorLayer[data-main-rotation="90"]
-    :is([data-editor-rotation="270"], [data-editor-rotation="90"]) &gt; .resizers &gt; .resizer.bottomRight,
+    :is([data-editor-rotation="270"], [data-editor-rotation="90"]) > .resizers > .resizer.bottomRight,
       .annotationEditorLayer[data-main-rotation="180"]
-    :is([data-editor-rotation="180"], [data-editor-rotation="0"]) &gt; .resizers &gt; .resizer.bottomRight,
+    :is([data-editor-rotation="180"], [data-editor-rotation="0"]) > .resizers > .resizer.bottomRight,
       .annotationEditorLayer[data-main-rotation="270"]
-    :is([data-editor-rotation="90"], [data-editor-rotation="270"]) &gt; .resizers &gt; .resizer.bottomRight {
+    :is([data-editor-rotation="90"], [data-editor-rotation="270"]) > .resizers > .resizer.bottomRight {
         cursor: nwse-resize;
       }
 
 .annotationEditorLayer[data-main-rotation="0"]
-    :is([data-editor-rotation="0"], [data-editor-rotation="180"]) &gt; .resizers &gt; .resizer.topMiddle,
+    :is([data-editor-rotation="0"], [data-editor-rotation="180"]) > .resizers > .resizer.topMiddle,
       .annotationEditorLayer[data-main-rotation="90"]
-    :is([data-editor-rotation="270"], [data-editor-rotation="90"]) &gt; .resizers &gt; .resizer.topMiddle,
+    :is([data-editor-rotation="270"], [data-editor-rotation="90"]) > .resizers > .resizer.topMiddle,
       .annotationEditorLayer[data-main-rotation="180"]
-    :is([data-editor-rotation="180"], [data-editor-rotation="0"]) &gt; .resizers &gt; .resizer.topMiddle,
+    :is([data-editor-rotation="180"], [data-editor-rotation="0"]) > .resizers > .resizer.topMiddle,
       .annotationEditorLayer[data-main-rotation="270"]
-    :is([data-editor-rotation="90"], [data-editor-rotation="270"]) &gt; .resizers &gt; .resizer.topMiddle,
+    :is([data-editor-rotation="90"], [data-editor-rotation="270"]) > .resizers > .resizer.topMiddle,
       .annotationEditorLayer[data-main-rotation="0"]
-    :is([data-editor-rotation="0"], [data-editor-rotation="180"]) &gt; .resizers &gt; .resizer.bottomMiddle,
+    :is([data-editor-rotation="0"], [data-editor-rotation="180"]) > .resizers > .resizer.bottomMiddle,
       .annotationEditorLayer[data-main-rotation="90"]
-    :is([data-editor-rotation="270"], [data-editor-rotation="90"]) &gt; .resizers &gt; .resizer.bottomMiddle,
+    :is([data-editor-rotation="270"], [data-editor-rotation="90"]) > .resizers > .resizer.bottomMiddle,
       .annotationEditorLayer[data-main-rotation="180"]
-    :is([data-editor-rotation="180"], [data-editor-rotation="0"]) &gt; .resizers &gt; .resizer.bottomMiddle,
+    :is([data-editor-rotation="180"], [data-editor-rotation="0"]) > .resizers > .resizer.bottomMiddle,
       .annotationEditorLayer[data-main-rotation="270"]
-    :is([data-editor-rotation="90"], [data-editor-rotation="270"]) &gt; .resizers &gt; .resizer.bottomMiddle {
+    :is([data-editor-rotation="90"], [data-editor-rotation="270"]) > .resizers > .resizer.bottomMiddle {
         cursor: ns-resize;
       }
 
 .annotationEditorLayer[data-main-rotation="0"]
-    :is([data-editor-rotation="0"], [data-editor-rotation="180"]) &gt; .resizers &gt; .resizer.topRight,
+    :is([data-editor-rotation="0"], [data-editor-rotation="180"]) > .resizers > .resizer.topRight,
       .annotationEditorLayer[data-main-rotation="90"]
-    :is([data-editor-rotation="270"], [data-editor-rotation="90"]) &gt; .resizers &gt; .resizer.topRight,
+    :is([data-editor-rotation="270"], [data-editor-rotation="90"]) > .resizers > .resizer.topRight,
       .annotationEditorLayer[data-main-rotation="180"]
-    :is([data-editor-rotation="180"], [data-editor-rotation="0"]) &gt; .resizers &gt; .resizer.topRight,
+    :is([data-editor-rotation="180"], [data-editor-rotation="0"]) > .resizers > .resizer.topRight,
       .annotationEditorLayer[data-main-rotation="270"]
-    :is([data-editor-rotation="90"], [data-editor-rotation="270"]) &gt; .resizers &gt; .resizer.topRight,
+    :is([data-editor-rotation="90"], [data-editor-rotation="270"]) > .resizers > .resizer.topRight,
       .annotationEditorLayer[data-main-rotation="0"]
-    :is([data-editor-rotation="0"], [data-editor-rotation="180"]) &gt; .resizers &gt; .resizer.bottomLeft,
+    :is([data-editor-rotation="0"], [data-editor-rotation="180"]) > .resizers > .resizer.bottomLeft,
       .annotationEditorLayer[data-main-rotation="90"]
-    :is([data-editor-rotation="270"], [data-editor-rotation="90"]) &gt; .resizers &gt; .resizer.bottomLeft,
+    :is([data-editor-rotation="270"], [data-editor-rotation="90"]) > .resizers > .resizer.bottomLeft,
       .annotationEditorLayer[data-main-rotation="180"]
-    :is([data-editor-rotation="180"], [data-editor-rotation="0"]) &gt; .resizers &gt; .resizer.bottomLeft,
+    :is([data-editor-rotation="180"], [data-editor-rotation="0"]) > .resizers > .resizer.bottomLeft,
       .annotationEditorLayer[data-main-rotation="270"]
-    :is([data-editor-rotation="90"], [data-editor-rotation="270"]) &gt; .resizers &gt; .resizer.bottomLeft {
+    :is([data-editor-rotation="90"], [data-editor-rotation="270"]) > .resizers > .resizer.bottomLeft {
         cursor: nesw-resize;
       }
 
 .annotationEditorLayer[data-main-rotation="0"]
-    :is([data-editor-rotation="0"], [data-editor-rotation="180"]) &gt; .resizers &gt; .resizer.middleRight,
+    :is([data-editor-rotation="0"], [data-editor-rotation="180"]) > .resizers > .resizer.middleRight,
       .annotationEditorLayer[data-main-rotation="90"]
-    :is([data-editor-rotation="270"], [data-editor-rotation="90"]) &gt; .resizers &gt; .resizer.middleRight,
+    :is([data-editor-rotation="270"], [data-editor-rotation="90"]) > .resizers > .resizer.middleRight,
       .annotationEditorLayer[data-main-rotation="180"]
-    :is([data-editor-rotation="180"], [data-editor-rotation="0"]) &gt; .resizers &gt; .resizer.middleRight,
+    :is([data-editor-rotation="180"], [data-editor-rotation="0"]) > .resizers > .resizer.middleRight,
       .annotationEditorLayer[data-main-rotation="270"]
-    :is([data-editor-rotation="90"], [data-editor-rotation="270"]) &gt; .resizers &gt; .resizer.middleRight,
+    :is([data-editor-rotation="90"], [data-editor-rotation="270"]) > .resizers > .resizer.middleRight,
       .annotationEditorLayer[data-main-rotation="0"]
-    :is([data-editor-rotation="0"], [data-editor-rotation="180"]) &gt; .resizers &gt; .resizer.middleLeft,
+    :is([data-editor-rotation="0"], [data-editor-rotation="180"]) > .resizers > .resizer.middleLeft,
       .annotationEditorLayer[data-main-rotation="90"]
-    :is([data-editor-rotation="270"], [data-editor-rotation="90"]) &gt; .resizers &gt; .resizer.middleLeft,
+    :is([data-editor-rotation="270"], [data-editor-rotation="90"]) > .resizers > .resizer.middleLeft,
       .annotationEditorLayer[data-main-rotation="180"]
-    :is([data-editor-rotation="180"], [data-editor-rotation="0"]) &gt; .resizers &gt; .resizer.middleLeft,
+    :is([data-editor-rotation="180"], [data-editor-rotation="0"]) > .resizers > .resizer.middleLeft,
       .annotationEditorLayer[data-main-rotation="270"]
-    :is([data-editor-rotation="90"], [data-editor-rotation="270"]) &gt; .resizers &gt; .resizer.middleLeft {
+    :is([data-editor-rotation="90"], [data-editor-rotation="270"]) > .resizers > .resizer.middleLeft {
         cursor: ew-resize;
       }
 
 .annotationEditorLayer[data-main-rotation="0"]
-    :is([data-editor-rotation="90"], [data-editor-rotation="270"]) &gt; .resizers &gt; .resizer.topLeft,
+    :is([data-editor-rotation="90"], [data-editor-rotation="270"]) > .resizers > .resizer.topLeft,
       .annotationEditorLayer[data-main-rotation="90"]
-    :is([data-editor-rotation="0"], [data-editor-rotation="180"]) &gt; .resizers &gt; .resizer.topLeft,
+    :is([data-editor-rotation="0"], [data-editor-rotation="180"]) > .resizers > .resizer.topLeft,
       .annotationEditorLayer[data-main-rotation="180"]
-    :is([data-editor-rotation="270"], [data-editor-rotation="90"]) &gt; .resizers &gt; .resizer.topLeft,
+    :is([data-editor-rotation="270"], [data-editor-rotation="90"]) > .resizers > .resizer.topLeft,
       .annotationEditorLayer[data-main-rotation="270"]
-    :is([data-editor-rotation="180"], [data-editor-rotation="0"]) &gt; .resizers &gt; .resizer.topLeft,
+    :is([data-editor-rotation="180"], [data-editor-rotation="0"]) > .resizers > .resizer.topLeft,
       .annotationEditorLayer[data-main-rotation="0"]
-    :is([data-editor-rotation="90"], [data-editor-rotation="270"]) &gt; .resizers &gt; .resizer.bottomRight,
+    :is([data-editor-rotation="90"], [data-editor-rotation="270"]) > .resizers > .resizer.bottomRight,
       .annotationEditorLayer[data-main-rotation="90"]
-    :is([data-editor-rotation="0"], [data-editor-rotation="180"]) &gt; .resizers &gt; .resizer.bottomRight,
+    :is([data-editor-rotation="0"], [data-editor-rotation="180"]) > .resizers > .resizer.bottomRight,
       .annotationEditorLayer[data-main-rotation="180"]
-    :is([data-editor-rotation="270"], [data-editor-rotation="90"]) &gt; .resizers &gt; .resizer.bottomRight,
+    :is([data-editor-rotation="270"], [data-editor-rotation="90"]) > .resizers > .resizer.bottomRight,
       .annotationEditorLayer[data-main-rotation="270"]
-    :is([data-editor-rotation="180"], [data-editor-rotation="0"]) &gt; .resizers &gt; .resizer.bottomRight {
+    :is([data-editor-rotation="180"], [data-editor-rotation="0"]) > .resizers > .resizer.bottomRight {
         cursor: nesw-resize;
       }
 
 .annotationEditorLayer[data-main-rotation="0"]
-    :is([data-editor-rotation="90"], [data-editor-rotation="270"]) &gt; .resizers &gt; .resizer.topMiddle,
+    :is([data-editor-rotation="90"], [data-editor-rotation="270"]) > .resizers > .resizer.topMiddle,
       .annotationEditorLayer[data-main-rotation="90"]
-    :is([data-editor-rotation="0"], [data-editor-rotation="180"]) &gt; .resizers &gt; .resizer.topMiddle,
+    :is([data-editor-rotation="0"], [data-editor-rotation="180"]) > .resizers > .resizer.topMiddle,
       .annotationEditorLayer[data-main-rotation="180"]
-    :is([data-editor-rotation="270"], [data-editor-rotation="90"]) &gt; .resizers &gt; .resizer.topMiddle,
+    :is([data-editor-rotation="270"], [data-editor-rotation="90"]) > .resizers > .resizer.topMiddle,
       .annotationEditorLayer[data-main-rotation="270"]
-    :is([data-editor-rotation="180"], [data-editor-rotation="0"]) &gt; .resizers &gt; .resizer.topMiddle,
+    :is([data-editor-rotation="180"], [data-editor-rotation="0"]) > .resizers > .resizer.topMiddle,
       .annotationEditorLayer[data-main-rotation="0"]
-    :is([data-editor-rotation="90"], [data-editor-rotation="270"]) &gt; .resizers &gt; .resizer.bottomMiddle,
+    :is([data-editor-rotation="90"], [data-editor-rotation="270"]) > .resizers > .resizer.bottomMiddle,
       .annotationEditorLayer[data-main-rotation="90"]
-    :is([data-editor-rotation="0"], [data-editor-rotation="180"]) &gt; .resizers &gt; .resizer.bottomMiddle,
+    :is([data-editor-rotation="0"], [data-editor-rotation="180"]) > .resizers > .resizer.bottomMiddle,
       .annotationEditorLayer[data-main-rotation="180"]
-    :is([data-editor-rotation="270"], [data-editor-rotation="90"]) &gt; .resizers &gt; .resizer.bottomMiddle,
+    :is([data-editor-rotation="270"], [data-editor-rotation="90"]) > .resizers > .resizer.bottomMiddle,
       .annotationEditorLayer[data-main-rotation="270"]
-    :is([data-editor-rotation="180"], [data-editor-rotation="0"]) &gt; .resizers &gt; .resizer.bottomMiddle {
+    :is([data-editor-rotation="180"], [data-editor-rotation="0"]) > .resizers > .resizer.bottomMiddle {
         cursor: ew-resize;
       }
 
 .annotationEditorLayer[data-main-rotation="0"]
-    :is([data-editor-rotation="90"], [data-editor-rotation="270"]) &gt; .resizers &gt; .resizer.topRight,
+    :is([data-editor-rotation="90"], [data-editor-rotation="270"]) > .resizers > .resizer.topRight,
       .annotationEditorLayer[data-main-rotation="90"]
-    :is([data-editor-rotation="0"], [data-editor-rotation="180"]) &gt; .resizers &gt; .resizer.topRight,
+    :is([data-editor-rotation="0"], [data-editor-rotation="180"]) > .resizers > .resizer.topRight,
       .annotationEditorLayer[data-main-rotation="180"]
-    :is([data-editor-rotation="270"], [data-editor-rotation="90"]) &gt; .resizers &gt; .resizer.topRight,
+    :is([data-editor-rotation="270"], [data-editor-rotation="90"]) > .resizers > .resizer.topRight,
       .annotationEditorLayer[data-main-rotation="270"]
-    :is([data-editor-rotation="180"], [data-editor-rotation="0"]) &gt; .resizers &gt; .resizer.topRight,
+    :is([data-editor-rotation="180"], [data-editor-rotation="0"]) > .resizers > .resizer.topRight,
       .annotationEditorLayer[data-main-rotation="0"]
-    :is([data-editor-rotation="90"], [data-editor-rotation="270"]) &gt; .resizers &gt; .resizer.bottomLeft,
+    :is([data-editor-rotation="90"], [data-editor-rotation="270"]) > .resizers > .resizer.bottomLeft,
       .annotationEditorLayer[data-main-rotation="90"]
-    :is([data-editor-rotation="0"], [data-editor-rotation="180"]) &gt; .resizers &gt; .resizer.bottomLeft,
+    :is([data-editor-rotation="0"], [data-editor-rotation="180"]) > .resizers > .resizer.bottomLeft,
       .annotationEditorLayer[data-main-rotation="180"]
-    :is([data-editor-rotation="270"], [data-editor-rotation="90"]) &gt; .resizers &gt; .resizer.bottomLeft,
+    :is([data-editor-rotation="270"], [data-editor-rotation="90"]) > .resizers > .resizer.bottomLeft,
       .annotationEditorLayer[data-main-rotation="270"]
-    :is([data-editor-rotation="180"], [data-editor-rotation="0"]) &gt; .resizers &gt; .resizer.bottomLeft {
+    :is([data-editor-rotation="180"], [data-editor-rotation="0"]) > .resizers > .resizer.bottomLeft {
         cursor: nwse-resize;
       }
 
 .annotationEditorLayer[data-main-rotation="0"]
-    :is([data-editor-rotation="90"], [data-editor-rotation="270"]) &gt; .resizers &gt; .resizer.middleRight,
+    :is([data-editor-rotation="90"], [data-editor-rotation="270"]) > .resizers > .resizer.middleRight,
       .annotationEditorLayer[data-main-rotation="90"]
-    :is([data-editor-rotation="0"], [data-editor-rotation="180"]) &gt; .resizers &gt; .resizer.middleRight,
+    :is([data-editor-rotation="0"], [data-editor-rotation="180"]) > .resizers > .resizer.middleRight,
       .annotationEditorLayer[data-main-rotation="180"]
-    :is([data-editor-rotation="270"], [data-editor-rotation="90"]) &gt; .resizers &gt; .resizer.middleRight,
+    :is([data-editor-rotation="270"], [data-editor-rotation="90"]) > .resizers > .resizer.middleRight,
       .annotationEditorLayer[data-main-rotation="270"]
-    :is([data-editor-rotation="180"], [data-editor-rotation="0"]) &gt; .resizers &gt; .resizer.middleRight,
+    :is([data-editor-rotation="180"], [data-editor-rotation="0"]) > .resizers > .resizer.middleRight,
       .annotationEditorLayer[data-main-rotation="0"]
-    :is([data-editor-rotation="90"], [data-editor-rotation="270"]) &gt; .resizers &gt; .resizer.middleLeft,
+    :is([data-editor-rotation="90"], [data-editor-rotation="270"]) > .resizers > .resizer.middleLeft,
       .annotationEditorLayer[data-main-rotation="90"]
-    :is([data-editor-rotation="0"], [data-editor-rotation="180"]) &gt; .resizers &gt; .resizer.middleLeft,
+    :is([data-editor-rotation="0"], [data-editor-rotation="180"]) > .resizers > .resizer.middleLeft,
       .annotationEditorLayer[data-main-rotation="180"]
-    :is([data-editor-rotation="270"], [data-editor-rotation="90"]) &gt; .resizers &gt; .resizer.middleLeft,
+    :is([data-editor-rotation="270"], [data-editor-rotation="90"]) > .resizers > .resizer.middleLeft,
       .annotationEditorLayer[data-main-rotation="270"]
-    :is([data-editor-rotation="180"], [data-editor-rotation="0"]) &gt; .resizers &gt; .resizer.middleLeft {
+    :is([data-editor-rotation="180"], [data-editor-rotation="0"]) > .resizers > .resizer.middleLeft {
         cursor: ns-resize;
       }
 
@@ -1630,7 +1630,7 @@ body {
   cursor: none;
 }
 
-.pdfPresentationMode.pdfPresentationModeControls &gt; *,
+.pdfPresentationMode.pdfPresentationModeControls > *,
 .pdfPresentationMode.pdfPresentationModeControls .textLayer span {
   cursor: default;
 }
@@ -1838,17 +1838,17 @@ body {
   min-width: 300px;
   background-color: var(--toolbar-bg-color);
 }
-.findbar &gt; div {
+.findbar > div {
   height: 32px;
 }
-.findbar &gt; div#findbarInputContainer {
+.findbar > div#findbarInputContainer {
   margin-inline-end: 4px;
 }
-.findbar.wrapContainers &gt; div,
-.findbar.wrapContainers &gt; div#findbarMessageContainer &gt; * {
+.findbar.wrapContainers > div,
+.findbar.wrapContainers > div#findbarMessageContainer > * {
   clear: both;
 }
-.findbar.wrapContainers &gt; div#findbarMessageContainer {
+.findbar.wrapContainers > div#findbarMessageContainer {
   height: auto;
 }
 
@@ -1904,7 +1904,7 @@ body {
   margin-bottom: -4px;
 }
 
-.editorParamsToolbarContainer &gt; .editorParamsSetter {
+.editorParamsToolbarContainer > .editorParamsSetter {
   min-height: 26px;
   display: flex;
   align-items: center;
@@ -2045,9 +2045,9 @@ body {
   float: var(--inline-end);
 }
 
-#toolbarViewerLeft &gt; *,
-#toolbarViewerMiddle &gt; *,
-#toolbarViewerRight &gt; *,
+#toolbarViewerLeft > *,
+#toolbarViewerMiddle > *,
+#toolbarViewerRight > *,
 #toolbarSidebarLeft *,
 #toolbarSidebarRight *,
 .findbar * {
@@ -2069,7 +2069,7 @@ body {
   margin: 2px;
   display: inline-block;
 }
-.splitToolbarButton &gt; .toolbarButton {
+.splitToolbarButton > .toolbarButton {
   float: var(--inline-start);
 }
 
@@ -2087,11 +2087,11 @@ body {
   background-color: var(--dialog-button-hover-bg-color);
 }
 
-.dialogButton:is(:hover, :focus-visible) &gt; span {
+.dialogButton:is(:hover, :focus-visible) > span {
   color: var(--dialog-button-hover-color);
 }
 
-.toolbarButton &gt; span {
+.toolbarButton > span {
   display: inline-block;
   width: 0;
   height: 0;
@@ -2102,15 +2102,15 @@ body {
   opacity: 0.5;
 }
 
-.splitToolbarButton &gt; .toolbarButton:is(:hover, :focus-visible),
+.splitToolbarButton > .toolbarButton:is(:hover, :focus-visible),
 .dropdownToolbarButton:hover {
   background-color: var(--button-hover-color);
 }
-.splitToolbarButton &gt; .toolbarButton {
+.splitToolbarButton > .toolbarButton {
   position: relative;
   margin: 0;
 }
-#toolbarSidebar .splitToolbarButton &gt; .toolbarButton {
+#toolbarSidebar .splitToolbarButton > .toolbarButton {
   margin-inline-end: 2px;
 }
 
@@ -2150,13 +2150,13 @@ body {
 }
 
 :is(.toolbarButton, .secondaryToolbarButton).toggled,
-.splitToolbarButton.toggled &gt; .toolbarButton.toggled {
+.splitToolbarButton.toggled > .toolbarButton.toggled {
   background-color: var(--toggled-btn-bg-color);
   color: var(--toggled-btn-color);
 }
 
 :is(.toolbarButton, .secondaryToolbarButton).toggled:hover,
-.splitToolbarButton.toggled &gt; .toolbarButton.toggled:hover {
+.splitToolbarButton.toggled > .toolbarButton.toggled:hover {
   outline: var(--toggled-hover-btn-outline) !important;
 }
 
@@ -2165,7 +2165,7 @@ body {
 }
 
 :is(.toolbarButton, .secondaryToolbarButton).toggled:hover:active,
-.splitToolbarButton.toggled &gt; .toolbarButton.toggled:hover:active {
+.splitToolbarButton.toggled > .toolbarButton.toggled:hover:active {
   background-color: var(--toggled-hover-active-btn-color);
 }
 
@@ -2187,7 +2187,7 @@ body {
           mask-image: var(--toolbarButton-menuArrow-icon);
 }
 
-.dropdownToolbarButton &gt; select {
+.dropdownToolbarButton > select {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -2201,11 +2201,11 @@ body {
   border: none;
   background-color: var(--dropdown-btn-bg-color);
 }
-.dropdownToolbarButton &gt; select:is(:hover, :focus-visible) {
+.dropdownToolbarButton > select:is(:hover, :focus-visible) {
   background-color: var(--button-hover-color);
   color: var(--toggled-btn-color);
 }
-.dropdownToolbarButton &gt; select &gt; option {
+.dropdownToolbarButton > select > option {
   background: var(--doorhanger-bg-color);
   color: var(--main-color);
 }
@@ -2404,7 +2404,7 @@ a:is(.toolbarButton, .secondaryToolbarButton)[href="#"] {
   box-sizing: border-box;
   display: inline-block;
 }
-.secondaryToolbarButton &gt; span {
+.secondaryToolbarButton > span {
   padding-inline-end: 4px;
 }
 
@@ -2577,7 +2577,7 @@ a:is(.toolbarButton, .secondaryToolbarButton)[href="#"] {
   padding: 10px 30px 0;
 }
 
-#thumbnailView &gt; a:is(:active, :focus) {
+#thumbnailView > a:is(:active, :focus) {
   outline: 0;
 }
 
@@ -2596,11 +2596,11 @@ a:is(.toolbarButton, .secondaryToolbarButton)[href="#"] {
   border-radius: 2px;
 }
 
-#thumbnailView &gt; a:last-of-type &gt; .thumbnail {
+#thumbnailView > a:last-of-type > .thumbnail {
   margin-bottom: 10px;
 }
 
-a:focus &gt; .thumbnail,
+a:focus > .thumbnail,
 .thumbnail:hover {
   border-color: var(--thumbnail-hover-color);
 }
@@ -2613,26 +2613,26 @@ a:focus &gt; .thumbnail,
   height: var(--thumbnail-height);
   opacity: 0.9;
 }
-a:focus &gt; .thumbnail &gt; .thumbnailImage,
-.thumbnail:hover &gt; .thumbnailImage {
+a:focus > .thumbnail > .thumbnailImage,
+.thumbnail:hover > .thumbnailImage {
   opacity: 0.95;
 }
-.thumbnail.selected &gt; .thumbnailImage {
+.thumbnail.selected > .thumbnailImage {
   opacity: 1 !important;
 }
 
-.thumbnail:not([data-loaded]) &gt; .thumbnailImage {
+.thumbnail:not([data-loaded]) > .thumbnailImage {
   width: calc(var(--thumbnail-width) - 2px);
   height: calc(var(--thumbnail-height) - 2px);
   border: 1px dashed rgba(132, 132, 132, 1);
 }
 
-.treeWithDeepNesting &gt; .treeItem,
-.treeItem &gt; .treeItems {
+.treeWithDeepNesting > .treeItem,
+.treeItem > .treeItems {
   margin-inline-start: 20px;
 }
 
-.treeItem &gt; a {
+.treeItem > a {
   text-decoration: none;
   display: inline-block;
   /* Subtract the right padding (left, in RTL mode) of the container: */
@@ -2652,13 +2652,13 @@ a:focus &gt; .thumbnail &gt; .thumbnailImage,
   cursor: pointer;
 }
 
-#layersView .treeItem &gt; a * {
+#layersView .treeItem > a * {
   cursor: pointer;
 }
-#layersView .treeItem &gt; a &gt; label {
+#layersView .treeItem > a > label {
   padding-inline-start: 4px;
 }
-#layersView .treeItem &gt; a &gt; label &gt; input {
+#layersView .treeItem > a > label > input {
   float: var(--inline-start);
   margin-top: 1px;
 }
@@ -2684,7 +2684,7 @@ a:focus &gt; .thumbnail &gt; .thumbnailImage,
   display: none;
 }
 
-.treeItem.selected &gt; a {
+.treeItem.selected > a {
   background-color: var(--treeitem-selected-bg-color);
   color: var(--treeitem-selected-color);
 }
@@ -2692,7 +2692,7 @@ a:focus &gt; .thumbnail &gt; .thumbnailImage,
 .treeItemToggler:hover,
 .treeItemToggler:hover + a,
 .treeItemToggler:hover ~ .treeItems,
-.treeItem &gt; a:hover {
+.treeItem > a:hover {
   background-color: var(--treeitem-bg-color);
   background-clip: padding-box;
   border-radius: 2px;
@@ -2725,11 +2725,11 @@ dialog::backdrop {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
-dialog &gt; .row {
+dialog > .row {
   display: table-row;
 }
 
-dialog &gt; .row &gt; * {
+dialog > .row > * {
   display: table-cell;
 }
 
@@ -2764,15 +2764,15 @@ dialog :link {
 #documentPropertiesDialog {
   text-align: left;
 }
-#documentPropertiesDialog .row &gt; * {
+#documentPropertiesDialog .row > * {
   min-width: 100px;
   text-align: start;
 }
-#documentPropertiesDialog .row &gt; span {
+#documentPropertiesDialog .row > span {
   width: 125px;
   word-wrap: break-word;
 }
-#documentPropertiesDialog .row &gt; p {
+#documentPropertiesDialog .row > p {
   max-width: 225px;
   word-wrap: break-word;
 }
@@ -2822,7 +2822,7 @@ dialog :link {
     height: 100%;
   }
   /* wrapper around (scaled) print canvas elements */
-  #printContainer &gt; .printedPage {
+  #printContainer > .printedPage {
     page-break-after: always;
     page-break-inside: avoid;
 
@@ -2836,11 +2836,11 @@ dialog :link {
     align-items: center;
   }
 
-  #printContainer &gt; .xfaPrintedPage .xfaPage {
+  #printContainer > .xfaPrintedPage .xfaPage {
     position: absolute;
   }
 
-  #printContainer &gt; .xfaPrintedPage {
+  #printContainer > .xfaPrintedPage {
     page-break-after: always;
     page-break-inside: avoid;
     width: 100%;
@@ -2848,7 +2848,7 @@ dialog :link {
     position: relative;
   }
 
-  #printContainer &gt; .printedPage :is(canvas, img) {
+  #printContainer > .printedPage :is(canvas, img) {
     /* The intrinsic canvas / image size will make sure that we fit the page. */
     max-width: 100%;
     max-height: 100%;

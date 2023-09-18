@@ -1,221 +1,4 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-  <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width">
-<meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 6.3.0">
-<link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
-<link rel="preconnect" href="https://cdn.staticfile.org" crossorigin>
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
-  <link rel="mask-icon" href="/images/logo.svg" color="#222">
-  <link rel="manifest" href="/manifest.json">
-
-<link rel="stylesheet" href="/css/main.css">
-
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
-
-<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/6.4.0/css/all.min.css" integrity="sha256-HtsXJanqjKTc8vVQjO4YMhiqFoXkfBsjBWcX91T1jr8=" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdn.staticfile.org/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdn.staticfile.org/fancyapps-ui/5.0.20/fancybox/fancybox.css" integrity="sha256-RvRHGSuWAxZpXKV9lLDt2e+rZ+btzn48Wp4ueS3NZKs=" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdn.staticfile.org/pace/1.2.4/themes/blue/pace-theme-minimal.css">
-  <script src="https://cdn.staticfile.org/pace/1.2.4/pace.min.js" integrity="sha256-gqd7YTjg/BtfqWSwsJOvndl0Bxc8gFImLEkXQT8+qj0=" crossorigin="anonymous"></script>
-
-<script class="next-config" data-name="main" type="application/json">{"hostname":"wxzhy.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.18.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":true,"style":"default"},"fold":{"enable":false,"height":500},"bookmark":{"enable":true,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":true,"comments":{"style":"tabs","active":"gitalk","storage":true,"lazyload":true,"nav":{"disqus":{"text":"Load Disqus","order":-1},"gitalk":{"order":-2}},"activeClass":"gitalk"},"stickytabs":false,"motion":{"enable":true,"async":true,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":true,"preload":true}}</script><script src="https://cdn.staticfile.org/hexo-theme-next/8.18.0/config.min.js"></script>
-
-    <meta name="description" content="PDF.js viewer                                                                                                    Thumbnails                                                Docu">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Tom&#39;s Yard">
-<meta property="og:url" content="https://wxzhy.github.io/lib/pdf/web/viewer.html">
-<meta property="og:site_name" content="Tom&#39;s Yard">
-<meta property="og:description" content="PDF.js viewer                                                                                                    Thumbnails                                                Docu">
-<meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2023-09-17T02:26:33.599Z">
-<meta property="article:modified_time" content="2023-09-17T02:26:33.599Z">
-<meta property="article:author" content="Tom">
-<meta name="twitter:card" content="summary">
-
-
-<link rel="canonical" href="https://wxzhy.github.io/lib/pdf/web/viewer">
-
-
-
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":false,"lang":"zh-CN","comments":true,"permalink":"https://wxzhy.github.io/lib/pdf/web/viewer.html","path":"lib/pdf/web/viewer.html","title":""}</script>
-
-<script class="next-config" data-name="calendar" type="application/json">""</script>
-<title> | Tom's Yard
-</title>
-  
-
-
-
-
-
-
-
-
-  <noscript>
-    <link rel="stylesheet" href="/css/noscript.css">
-  </noscript>
-</head>
-
-<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
-  <div class="headband"></div>
-
-  <main class="main">
-    <div class="column">
-      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
-  <div class="site-nav-toggle">
-    <div class="toggle" aria-label="切换导航栏" role="button">
-        <span class="toggle-line"></span>
-        <span class="toggle-line"></span>
-        <span class="toggle-line"></span>
-    </div>
-  </div>
-
-  <div class="site-meta">
-
-    <a href="/" class="brand" rel="start">
-      <i class="logo-line"></i>
-      <p class="site-title">Tom's Yard</p>
-      <i class="logo-line"></i>
-    </a>
-      <p class="site-subtitle" itemprop="description">A quiet place for my thoughts</p>
-  </div>
-
-  <div class="site-nav-right">
-    <div class="toggle popup-trigger" aria-label="搜索" role="button">
-        <i class="fa fa-search fa-fw fa-lg"></i>
-    </div>
-  </div>
-</div>
-
-
-
-<nav class="site-nav">
-  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li><li class="menu-item menu-item-sitemap"><a href="/sitemap.xml" rel="section"><i class="fa fa-sitemap fa-fw"></i>站点地图</a></li>
-      <li class="menu-item menu-item-search">
-        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
-        </a>
-      </li>
-  </ul>
-</nav>
-
-
-
-  <div class="search-pop-overlay">
-    <div class="popup search-popup"><div class="search-header">
-  <span class="search-icon">
-    <i class="fa fa-search"></i>
-  </span>
-  <div class="search-input-container">
-    <input autocomplete="off" autocapitalize="off" maxlength="80"
-           placeholder="搜索..." spellcheck="false"
-           type="search" class="search-input">
-  </div>
-  <span class="popup-btn-close" role="button">
-    <i class="fa fa-times-circle"></i>
-  </span>
-</div>
-<div class="search-result-container no-result">
-  <div class="search-result-icon">
-    <i class="fa fa-spinner fa-pulse fa-5x"></i>
-  </div>
-</div>
-
-    </div>
-  </div>
-
-</header>
-        
-  
-  <aside class="sidebar">
-
-    <div class="sidebar-inner sidebar-overview-active">
-      <ul class="sidebar-nav">
-        <li class="sidebar-nav-toc">
-          文章目录
-        </li>
-        <li class="sidebar-nav-overview">
-          站点概览
-        </li>
-      </ul>
-
-      <div class="sidebar-panel-container">
-        <!--noindex-->
-        <div class="post-toc-wrap sidebar-panel">
-        </div>
-        <!--/noindex-->
-
-        <div class="site-overview-wrap sidebar-panel">
-          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
-  <p class="site-author-name" itemprop="name">Tom</p>
-  <div class="site-description" itemprop="description"></div>
-</div>
-<div class="site-state-wrap animated">
-  <nav class="site-state">
-      <div class="site-state-item site-state-posts">
-        <a href="/archives/">
-          <span class="site-state-item-count">6</span>
-          <span class="site-state-item-name">日志</span>
-        </a>
-      </div>
-      <div class="site-state-item site-state-tags">
-          <a href="/tags/">
-        <span class="site-state-item-count">6</span>
-        <span class="site-state-item-name">标签</span></a>
-      </div>
-  </nav>
-</div>
-  <div class="links-of-author animated">
-      <span class="links-of-author-item">
-        <a href="https://github.com/wxzhy" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;wxzhy" rel="noopener me" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
-      </span>
-      <span class="links-of-author-item">
-        <a href="mailto:mail@wxzhy.eu.org" title="E-Mail → mailto:mail@wxzhy.eu.org" rel="noopener me" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
-      </span>
-  </div>
-
-        </div>
-      </div>
-    </div>
-
-    
-        <div class="pjax">
-        </div>
-  </aside>
-
-
-    </div>
-
-    <div class="main-inner page posts-expand">
-
-
-    
-    
-    
-    <div class="post-block" lang="zh-CN"><header class="post-header">
-
-<h1 class="post-title" itemprop="name headline">
-</h1>
-
-<div class="post-meta-container">
-  <ul class="breadcrumb">
-            <li><a href="/lib/">LIB</a></li>
-            <li><a href="/lib/pdf/">PDF</a></li>
-            <li><a href="/lib/pdf/web/">WEB</a></li>
-            <li>VIEWER</li>
-  </ul>
-</div>
-
-</header>
-
-      
-      
-      <div class="post-body">
-          
+﻿<!DOCTYPE html>
 <!--
 Copyright 2012 Mozilla Foundation
 
@@ -237,8 +20,8 @@ Adobe CMap resources are covered by their own copyright but the same license:
 
 See https://github.com/adobe-type-tools/cmap-resources
 -->
-
-  
+<html dir="ltr" mozdisallowselectionprint>
+  <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="google" content="notranslate">
@@ -251,9 +34,9 @@ See https://github.com/adobe-type-tools/cmap-resources
     <link rel="stylesheet" href="viewer.css">
 
   <script src="viewer.js"></script>
-  
+  </head>
 
-  
+  <body tabindex="1">
     <div id="outerContainer">
 
       <div id="sidebarContainer">
@@ -430,7 +213,7 @@ See https://github.com/adobe-type-tools/cmap-resources
                 <span data-l10n-id="scroll_page_label">Page Scrolling</span>
               </button>
               <button id="scrollVertical" class="secondaryToolbarButton toggled" title="Use Vertical Scrolling" tabindex="63" data-l10n-id="scroll_vertical" role="radio" aria-checked="true">
-                <span data-l10n-id="scroll_vertical_label">Vertical Scrolling</span>
+                <span data-l10n-id="scroll_vertical_label" >Vertical Scrolling</span>
               </button>
               <button id="scrollHorizontal" class="secondaryToolbarButton" title="Use Horizontal Scrolling" tabindex="64" data-l10n-id="scroll_horizontal" role="radio" aria-checked="false">
                 <span data-l10n-id="scroll_horizontal_label">Horizontal Scrolling</span>
@@ -535,14 +318,14 @@ See https://github.com/adobe-type-tools/cmap-resources
                     <option id="pageFitOption" title="" value="page-fit" data-l10n-id="page_scale_fit">Page Fit</option>
                     <option id="pageWidthOption" title="" value="page-width" data-l10n-id="page_scale_width">Page Width</option>
                     <option id="customScaleOption" title="" value="custom" disabled="disabled" hidden="true"></option>
-                    <option title="" value="0.5" data-l10n-id="page_scale_percent" data-l10n-args="{ &quot;scale&quot;: 50 }">50%</option>
-                    <option title="" value="0.75" data-l10n-id="page_scale_percent" data-l10n-args="{ &quot;scale&quot;: 75 }">75%</option>
-                    <option title="" value="1" data-l10n-id="page_scale_percent" data-l10n-args="{ &quot;scale&quot;: 100 }">100%</option>
-                    <option title="" value="1.25" data-l10n-id="page_scale_percent" data-l10n-args="{ &quot;scale&quot;: 125 }">125%</option>
-                    <option title="" value="1.5" data-l10n-id="page_scale_percent" data-l10n-args="{ &quot;scale&quot;: 150 }">150%</option>
-                    <option title="" value="2" data-l10n-id="page_scale_percent" data-l10n-args="{ &quot;scale&quot;: 200 }">200%</option>
-                    <option title="" value="3" data-l10n-id="page_scale_percent" data-l10n-args="{ &quot;scale&quot;: 300 }">300%</option>
-                    <option title="" value="4" data-l10n-id="page_scale_percent" data-l10n-args="{ &quot;scale&quot;: 400 }">400%</option>
+                    <option title="" value="0.5" data-l10n-id="page_scale_percent" data-l10n-args='{ "scale": 50 }'>50%</option>
+                    <option title="" value="0.75" data-l10n-id="page_scale_percent" data-l10n-args='{ "scale": 75 }'>75%</option>
+                    <option title="" value="1" data-l10n-id="page_scale_percent" data-l10n-args='{ "scale": 100 }'>100%</option>
+                    <option title="" value="1.25" data-l10n-id="page_scale_percent" data-l10n-args='{ "scale": 125 }'>125%</option>
+                    <option title="" value="1.5" data-l10n-id="page_scale_percent" data-l10n-args='{ "scale": 150 }'>150%</option>
+                    <option title="" value="2" data-l10n-id="page_scale_percent" data-l10n-args='{ "scale": 200 }'>200%</option>
+                    <option title="" value="3" data-l10n-id="page_scale_percent" data-l10n-args='{ "scale": 300 }'>300%</option>
+                    <option title="" value="4" data-l10n-id="page_scale_percent" data-l10n-args='{ "scale": 400 }'>400%</option>
                   </select>
                 </span>
               </div>
@@ -644,7 +427,7 @@ See https://github.com/adobe-type-tools/cmap-resources
           </div>
           <div class="row">
             <progress value="0" max="100"></progress>
-            <span data-l10n-id="print_progress_percent" data-l10n-args="{ &quot;progress&quot;: 0 }" class="relative-progress">0%</span>
+            <span data-l10n-id="print_progress_percent" data-l10n-args='{ "progress": 0 }' class="relative-progress">0%</span>
           </div>
           <div class="buttonRow">
             <button id="printCancel" class="dialogButton"><span data-l10n-id="print_progress_close">Cancel</span></button>
@@ -656,139 +439,5 @@ See https://github.com/adobe-type-tools/cmap-resources
     <div id="printContainer"></div>
 
     <input type="file" id="fileInput" class="hidden">
-  
-
-
-      </div>
-      
-      
-      
-    </div>
-  <ul class="breadcrumb">
-            <li><a href="/lib/">LIB</a></li>
-            <li><a href="/lib/pdf/">PDF</a></li>
-            <li><a href="/lib/pdf/web/">WEB</a></li>
-            <li>VIEWER</li>
-  </ul>
-
-    
-    
-
-
-      <div class="tabs tabs-comment">
-        <ul class="nav-tabs">
-            <li class="tab"><a href="#comment-gitalk">gitalk</a></li>
-            <li class="tab"><a href="#comment-disqusjs">disqusjs</a></li>
-            <li class="tab"><a href="#comment-livere">livere</a></li>
-        </ul>
-        <div class="tab-content">
-            <div class="tab-pane gitalk" id="comment-gitalk">
-              <div class="comments gitalk-container"></div>
-            </div>
-            <div class="tab-pane disqusjs" id="comment-disqusjs">
-              
-  <div class="comments disqusjs-container">
-    <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
-  </div>
-  
-            </div>
-            <div class="tab-pane livere" id="comment-livere">
-              <div class="comments" id="lv-container" data-id="city" data-uid="MTAyMC81ODk5OS8zNTQ2MQ"></div>
-            </div>
-        </div>
-      </div>
-</div>
-  </main>
-
-  <footer class="footer">
-    <div class="footer-inner">
-
-  <div class="copyright">
-    &copy; 
-    <span itemprop="copyrightYear">2023</span>
-    <span class="with-love">
-      <i class="fa fa-heart"></i>
-    </span>
-    <span class="author" itemprop="copyrightHolder">Tom</span>
-  </div>
-<div class="wordcount">
-  <span class="post-meta-item">
-    <span class="post-meta-item-icon">
-      <i class="fa fa-chart-line"></i>
-    </span>
-    <span title="站点总字数">4k</span>
-  </span>
-  <span class="post-meta-item">
-    <span class="post-meta-item-icon">
-      <i class="fa fa-coffee"></i>
-    </span>
-    <span title="站点阅读时长">14 分钟</span>
-  </span>
-</div>
-  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
-  </div>
-
-    </div>
-  </footer>
-
-  
-  <div class="back-to-top" role="button" aria-label="返回顶部">
-    <i class="fa fa-arrow-up fa-lg"></i>
-    <span>0%</span>
-  </div>
-  <div class="reading-progress-bar"></div>
-  <a role="button" class="book-mark-link book-mark-link-fixed"></a>
-
-<noscript>
-  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
-</noscript>
-
-
-  
-  <script src="https://cdn.staticfile.org/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
-  <script src="https://cdn.staticfile.org/next-theme-pjax/0.6.0/pjax.min.js" integrity="sha256-vxLn1tSKWD4dqbMRyv940UYw4sXgMtYcK6reefzZrao=" crossorigin="anonymous"></script>
-  <script src="https://cdn.staticfile.org/fancyapps-ui/5.0.20/fancybox/fancybox.umd.js" integrity="sha256-q8XkJ6dj5VwSvzI8+nATCHHQG+Xv/dAZBCgqmu93zOY=" crossorigin="anonymous"></script>
-  <script src="https://cdn.staticfile.org/pangu/4.0.7/pangu.min.js" integrity="sha256-j+yj56cdEY2CwkVtGyz18fNybFGpMGJ8JxG3GSyO2+I=" crossorigin="anonymous"></script>
-<script src="https://cdn.staticfile.org/hexo-theme-next/8.18.0/comments.min.js"></script><script src="https://cdn.staticfile.org/hexo-theme-next/8.18.0/utils.min.js"></script><script src="https://cdn.staticfile.org/hexo-theme-next/8.18.0/motion.min.js"></script><script src="https://cdn.staticfile.org/hexo-theme-next/8.18.0/next-boot.min.js"></script><script src="https://cdn.staticfile.org/hexo-theme-next/8.18.0/bookmark.min.js"></script><script src="https://cdn.staticfile.org/hexo-theme-next/8.18.0/pjax.min.js"></script>
-
-  <script src="https://cdn.staticfile.org/hexo-generator-searchdb/1.4.1/search.js" integrity="sha256-1kfA5uHPf65M5cphT2dvymhkuyHPQp5A53EGZOnOLmc=" crossorigin="anonymous"></script>
-<script src="https://cdn.staticfile.org/hexo-theme-next/8.18.0/third-party/search/local-search.min.js"></script>
-
-  <script class="next-config" data-name="pdf" type="application/json">{"object_url":{"url":"https://cdn.staticfile.org/pdfobject/2.2.12/pdfobject.min.js","integrity":"sha256-g2xji1rlE3KsGVClvuxTbcR0Kn2+wtQADSff2Tbb4zA="},"url":"/lib/pdf/web/viewer.html"}</script>
-  <script src="https://cdn.staticfile.org/hexo-theme-next/8.18.0/third-party/tags/pdf.min.js"></script>
-
-  <script class="next-config" data-name="mermaid" type="application/json">{"enable":true,"theme":{"light":"default","dark":"dark"},"js":{"url":"https://cdn.staticfile.org/mermaid/10.3.0/mermaid.min.js","integrity":"sha256-9y71g5Lz/KLsHjB8uXwnkuWDtAMDSzD/HdIbqhJfTAI="}}</script>
-  <script src="https://cdn.staticfile.org/hexo-theme-next/8.18.0/third-party/tags/mermaid.min.js"></script>
-
-
-  <script src="https://cdn.staticfile.org/hexo-theme-next/8.18.0/third-party/fancybox.min.js"></script>
-
-  <script src="https://cdn.staticfile.org/hexo-theme-next/8.18.0/third-party/pace.min.js"></script>
-
-
-  
-
-
-
-
-  
-
-  <script class="next-config" data-name="enableMath" type="application/json">true</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"all","js":{"url":"https://cdn.staticfile.org/mathjax/3.2.2/es5/tex-mml-chtml.js","integrity":"sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI="}}</script>
-<script src="https://cdn.staticfile.org/hexo-theme-next/8.18.0/third-party/math/mathjax.min.js"></script>
-
-
-  <script src="https://cdn.staticfile.org/quicklink/2.3.0/quicklink.umd.js" integrity="sha256-yvJQOINiH9fWemHn0vCA5lsHWJaHs6/ZmO+1Ft04SvM=" crossorigin="anonymous"></script>
-  <script class="next-config" data-name="quicklink" type="application/json">{"enable":true,"home":false,"archive":false,"delay":true,"timeout":3000,"priority":true,"url":"https://wxzhy.github.io/lib/pdf/web/viewer.html"}</script>
-  <script src="https://cdn.staticfile.org/hexo-theme-next/8.18.0/third-party/quicklink.min.js"></script>
-<link rel="stylesheet" href="https://cdn.staticfile.org/disqusjs/3.0.2/styles/disqusjs.css" integrity="sha256-71XarXwNr1Td27HmZI9zjY+rMzRdush6/glo6VFXp7o=" crossorigin="anonymous">
-
-<script class="next-config" data-name="disqusjs" type="application/json">{"enable":true,"api":"https://proxy.cors.sh/https://disqus.com/api/","apikey":"CVMOWPMqbj5wZ95x4J5LuYNytuaYgWlLAnh3R216F80BJXRYDfAGzOFSBpfi8SCC","shortname":"tomzhu","js":{"url":"https://cdn.staticfile.org/disqusjs/3.0.2/disqusjs.es2015.umd.min.js","integrity":"sha256-okP99ZQKVpIy7+NogAMpGlIQzJa9XKXhIJcFgdju5bU="}}</script>
-<script src="https://cdn.staticfile.org/hexo-theme-next/8.18.0/third-party/comments/disqusjs.min.js"></script>
-<link rel="stylesheet" href="https://cdn.staticfile.org/gitalk/1.8.0/gitalk.css" integrity="sha256-AJnUHL7dBv6PGaeyPQJcgQPDjt/Hn/PvYZde1iqfp8U=" crossorigin="anonymous">
-
-<script class="next-config" data-name="gitalk" type="application/json">{"enable":true,"github_id":"wxzhy","repo":"wxzhy.github.io","client_id":"49abff1cbbbc71184768","client_secret":"04583734a9cae4ef3a33fafe7daa313151adc365","admin_user":"wxzhy","distraction_free_mode":true,"proxy":"https://proxy.cors.sh/https://github.com/login/oauth/access_token","language":"zh-CN","js":{"url":"https://cdn.staticfile.org/gitalk/1.8.0/gitalk.min.js","integrity":"sha256-MVK9MGD/XJaGyIghSVrONSnoXoGh3IFxLw0zfvzpxR4="},"path_md5":"16301545442406105ec0ba53fa1bd85d"}</script>
-<script src="https://cdn.staticfile.org/hexo-theme-next/8.18.0/third-party/comments/gitalk.min.js"></script>
-<script src="https://cdn.staticfile.org/hexo-theme-next/8.18.0/third-party/comments/livere.min.js"></script>
-
-</body>
+  </body>
 </html>
